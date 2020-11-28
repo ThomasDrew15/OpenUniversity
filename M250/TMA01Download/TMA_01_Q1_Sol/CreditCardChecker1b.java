@@ -7,6 +7,7 @@
  */
 public class CreditCardChecker
 {
+  string longnumber = ""
 
    private int ;
 
