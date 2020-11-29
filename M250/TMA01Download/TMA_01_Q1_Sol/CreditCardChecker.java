@@ -22,14 +22,14 @@
 
    }
 
-  public boolean isCorrectLength(){
-    int length = longNumber.length();
-    if (length == 16){
-      return true;
-    }
-      return false;
-    }
- }
+   public boolean isCorrectLength(){
+     int length = longNumber.length();
+     if (length == 16){
+       return true;
+     }
+       return false;
+     }
+  }
 
 
 
