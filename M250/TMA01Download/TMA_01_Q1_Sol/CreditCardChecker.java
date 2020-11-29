@@ -23,9 +23,8 @@
    }
 
 public boolean isCorrectLength(){
-  int length = longNumber.length();
-  if (length == 16){
-    System.out.println("success");
+  if longNumber.length() == 16;
+  return true;
   }
 }
 
@@ -35,5 +34,9 @@ public boolean isCorrectLength(){
 *no arguments and returns the boolean
 *value true if the length of longNumber
 *is 16 and false();
+*  int length = longNumber.length();
+  if (length == 16){
+    System.out.println("success");
+    return true;
 */
 }
