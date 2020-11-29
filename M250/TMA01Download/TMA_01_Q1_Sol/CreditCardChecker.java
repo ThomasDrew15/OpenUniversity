@@ -21,15 +21,15 @@
      return longNumber;
 
    }
-   int testNum = 5
 
-   if (testNum == 5){
-     System.out.printl("success");
-   } else {
-     System.out.printl("no success");
+   public static boolean isCorrectLength(){
+     if (1 == 1){
+       System.out.printl("success");
+     } else {
+       System.out.printl("no success");
+     }
    }
-
-}
+ }
 
 
 
