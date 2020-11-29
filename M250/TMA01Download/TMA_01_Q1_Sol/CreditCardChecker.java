@@ -24,9 +24,9 @@
 
    public static boolean isCorrectLength(){
      if (1 == 1){
-       System.out.printl("success");
+       return true;
      } else {
-       System.out.printl("no success");
+       return false;
      }
    }
  }
