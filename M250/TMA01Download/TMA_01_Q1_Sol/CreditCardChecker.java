@@ -22,14 +22,14 @@
 
    }
 
-public boolean isCorrectLength(){
-  System.out.println(longNumber.length());
-  if (longNumber.length() == 16){
-    return true;
-  }
-  return false;
-  }
-}
+  public boolean isCorrectLength(){
+    System.out.println(longNumber.length());
+    if (longNumber.length() == 16){
+      return true;
+    }
+    return false;
+    }
+ }
 
 
 
