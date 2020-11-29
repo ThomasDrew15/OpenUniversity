@@ -23,8 +23,10 @@
    }
 
 public boolean isCorrectLength(){
-  if longNumber.length() == 16;
-  return true;
+  if (longNumber.length() == 16 ) {
+    return true;
+  }
+  return false;
   }
 }
 
@@ -39,4 +41,3 @@ public boolean isCorrectLength(){
     System.out.println("success");
     return true;
 */
-}
