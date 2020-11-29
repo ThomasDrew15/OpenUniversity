@@ -1,1 +1,1 @@
-CreditCardChecker test = new CreditCardChecker("4916592478445662")
+CreditCardChecker test = new CreditCardChecker("4916592478445662");
