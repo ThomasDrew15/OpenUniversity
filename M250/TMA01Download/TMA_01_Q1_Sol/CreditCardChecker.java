@@ -23,6 +23,7 @@
    }
 
 public boolean isCorrectLength(){
+  System.out.println(longNumber.length());
   if (longNumber.length() == 16){
     return true;
   }
