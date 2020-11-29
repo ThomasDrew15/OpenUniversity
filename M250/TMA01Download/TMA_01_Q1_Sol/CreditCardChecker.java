@@ -23,7 +23,7 @@
    }
 
 public boolean isCorrectLength(){
-  if (longNumber.length() == 16 ) {
+  if (longNumber.length() == 16){
     return true;
   }
   return false;
