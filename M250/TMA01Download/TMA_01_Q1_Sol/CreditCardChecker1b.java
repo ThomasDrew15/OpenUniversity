@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
- public class CreditCardChecker {
+ private class CreditCardChecker {
    private String longNumber;
 
    public CreditCardChecker(String ln){
@@ -19,4 +19,3 @@
    }
  }
 
-CreditCardChecker test = new CreditCardChecker("4916592478445662")

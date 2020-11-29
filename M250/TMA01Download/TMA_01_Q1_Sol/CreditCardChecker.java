@@ -5,29 +5,17 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class CreditCardChecker
-{
-   // instance variables - replace the example below with your own
-   private int x;
+ private class CreditCardChecker {
+   private String longNumber;
 
-   /**
-    * Constructor for objects of class CreditCardChecker
-    */
-   public CreditCardChecker()
-   {
-      // initialise instance variables
-      x = 0;
+   public CreditCardChecker(String ln){
+     longNumber = ln;
+
    }
 
-   /**
-    * An example of a method - replace this comment with your own
-    *
-    * @param  y   a sample parameter for a method
-    * @return     the sum of x and y
-    */
-   public int sampleMethod(int y)
-   {
-      // put your code here
-      return x + y;
+   public String getLongNumber(){
+     return longNumber;
+
    }
-}
+ }
+
