@@ -23,24 +23,10 @@
    }
 
    public boolean isCorrectLength(){
-     int numLen = longNumber.length();
-     if (numLen == 16){
+     if (longNumber.length()){
        return true;
      } else {
        return false;
      }
    }
  }
-
-
-
-/**
-*no arguments and returns the boolean
-*value true if the length of longNumber
-*is 16 and false();
-*  int length = longNumber.length();
-  if (length == 16){
-    System.out.println("success");
-    return true;
-    int numLen = longNumber.length();
-*/
