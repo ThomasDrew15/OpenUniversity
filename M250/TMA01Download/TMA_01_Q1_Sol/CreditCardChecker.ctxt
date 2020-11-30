@@ -1,8 +1,13 @@
 #BlueJ class context
 comment0.params=ln
 comment0.target=CreditCardChecker(java.lang.String)
+comment0.text=\n\ Constructor\ for\ CCC\n
 comment1.params=
 comment1.target=java.lang.String\ getLongNumber()
+comment1.text=\n\ getter\ method\ for\ longNumber\n
 comment2.params=
 comment2.target=boolean\ isCorrectLength()
-numComments=3
+comment2.text=\n\ boolean\ method\ to\ check\ longNumber\n\ is\ 16\ digits\ long.\ True\ if\ so,\n\ false\ if\ not\n
+comment3.params=
+comment3.target=java.lang.String\ firstFifteen()
+numComments=4

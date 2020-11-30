@@ -45,7 +45,7 @@
    }
 
    public String firstFifteen(){
-          return longNumber.substring(1, 15);
+          return longNumber.substring(0, 15);
    }
 
 
