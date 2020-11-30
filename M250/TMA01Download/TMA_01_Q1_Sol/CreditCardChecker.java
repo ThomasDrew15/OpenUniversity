@@ -23,8 +23,8 @@
    }
 
    public boolean isCorrectLength(){
-     int numLen = longNumber.length()
-     if (numLen == 16){
+
+     if (longNumber.length() == 16){
        return true;
      } else {
        return false;
@@ -42,4 +42,5 @@
   if (length == 16){
     System.out.println("success");
     return true;
+    int numLen = longNumber.length();
 */
