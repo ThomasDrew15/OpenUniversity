@@ -1,0 +1,26 @@
+#BlueJ package file
+package.editor.height=434
+package.editor.width=660
+package.editor.x=753
+package.editor.y=160
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+project.charset=UTF-8
+readme.editor.height=700
+readme.editor.width=900
+readme.editor.x=169
+readme.editor.y=40
+target1.editor.height=595
+target1.editor.width=780
+target1.editor.x=194
+target1.editor.y=170
+target1.height=50
+target1.name=CreditCardChecker
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=140
+target1.x=70
+target1.y=10

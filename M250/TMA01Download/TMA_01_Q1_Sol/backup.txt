@@ -1,0 +1,4 @@
+CreditCardChecker ccc = new CreditCardChecker("4916592478445662");
+ccc.getLongNumber();
+ccc.isCorrectLength();
+ccc.firstFifteen();
