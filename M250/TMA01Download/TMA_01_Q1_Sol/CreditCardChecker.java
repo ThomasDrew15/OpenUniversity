@@ -49,8 +49,12 @@
    }
 
    public String calculateCheckNumber(){
-     S = longNumber.substring(0, longNumber.length() -1);
-     return S;
+     String longNumberSh = longNumber.substring(0, longNumber.length() -1);
+     return longNumberSh;
+     String S = "";
+     for (int i = 0; i  < longNumberSh.length();i += 2 ) {
+       S += longNumberSh.charAt(i);
+     }
 
 
    }

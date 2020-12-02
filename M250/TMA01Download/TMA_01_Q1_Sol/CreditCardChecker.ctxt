@@ -11,5 +11,5 @@ comment2.text=\r\n\ boolean\ method\ to\ check\ longNumber\r\n\ is\ 16\ digits\ 
 comment3.params=
 comment3.target=java.lang.String\ firstFifteen()
 comment4.params=
-comment4.target=int\ calculateCheckNumber()
+comment4.target=java.lang.String\ calculateCheckNumber()
 numComments=5
