@@ -48,11 +48,10 @@
           return longNumber.substring(0, 15);
    }
 
-   public int calculateCheckNumber(){
-     char C = longNumber.charAt(15);
-     return Character.getNumericValue(C);
-     String S = longNumber.substring(0, 14);
-     return Character.getNumericValue(S);
+   public String calculateCheckNumber(){
+     S = longNumber.substring(0, longNumber.length() -1);
+     return S;
+
 
    }
 
