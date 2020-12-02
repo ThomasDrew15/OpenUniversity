@@ -49,7 +49,7 @@
    }
 
    public String calculateCheckNumber(){
-     return longNumber.getNumericValue(16);
+     return Character.getNumericValue((int)16);
    }
 
 
