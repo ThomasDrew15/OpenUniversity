@@ -52,8 +52,7 @@
      int S;
       for (int i = 0; i  < longNumber.length();i++ ){
        S = (i);
-       Character.getNumericValue(S)
-       System.out.println(S);
+       System.out.println(Character.getNumericValue(S));
      }
 
 
