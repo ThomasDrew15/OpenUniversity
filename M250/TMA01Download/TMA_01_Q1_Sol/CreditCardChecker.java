@@ -52,10 +52,13 @@
      String S = longNumber.substring(0, 15);
      for (int i = 0, n = S.length(); i < n; i=i+2) {
        int m = i*2;
-       if m > 9{
-         int m = m-9;
+       if (m > 9){
+         int x = m-9;
        }
+      }
+
     System.out.print(m);
+
        //char c = S.charAt(m);
      //System.out.println(S);
      //System.out.print(c);
