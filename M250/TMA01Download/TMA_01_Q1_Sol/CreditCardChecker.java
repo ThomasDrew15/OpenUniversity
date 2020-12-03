@@ -50,6 +50,10 @@
 
    public void calculateCheckNumber(){
      String S = longNumber.substring(0, 15);
+     for (int i = 0; S.length(); i++){
+       i*2;
+     }
+     System.out.println(S);
      }
 
 
