@@ -52,16 +52,15 @@
      String S = longNumber.substring(0, 15);
      for (int i = 0, n = S.length(); i < n; i=i+2) {
        int m = i*2;
-       System.out.print(m);
-       }
-       if (m > 9) {
-         int x = m-9;
-         System.out.print(x);
-       }
+              if (m > 9) {
+                int x = m-9;
+              }
+
+     }
 
 
-  
-
+         System.out.print(m);
+System.out.print(x);
        //char c = S.charAt(m);
      //System.out.println(S);
      //System.out.print(c);
