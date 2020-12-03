@@ -52,9 +52,10 @@
      String S = longNumber.substring(0, 15);
      for (int i = 0, n = S.length(); i < n; i++) {
        char c = S.charAt(i);
-     System.out.println(S);
+     //System.out.println(S);
      System.out.println(c);
      }
 
 
    }
+}
