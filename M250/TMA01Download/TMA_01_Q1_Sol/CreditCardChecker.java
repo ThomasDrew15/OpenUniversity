@@ -50,9 +50,9 @@
 
    public void calculateCheckNumber(){
      String S = longNumber.substring(0, 15);
-     for (int i = 0, n = S.length(); i < n; i+2) {
+     for (int i = 0, n = S.length(); i < n; i=i+2) {
        char c = S.charAt(i);
-     System.out.println(S);
+     //System.out.println(S);
      System.out.print(c);
      }
 
