@@ -49,8 +49,8 @@
    }
 
    public void calculateCheckNumber(){
-     for (int i = 0; i  < longNumberSh.length();i++ ){
-       System.out.println(i);
+     for (int i = 0; i  < longNumber.length();i++ ){
+       String S = (i);
      }
 
 
@@ -59,9 +59,3 @@
 
 
    }
-
-
-
-
-
- }
