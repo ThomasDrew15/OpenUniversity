@@ -50,11 +50,7 @@
 
    public void calculateCheckNumber(){
      String S = longNumber.substring(0, 15);
-     for (int i=0; S.length(); i++) {
-         if (i % 2 != 0) { // even values for i
-             i++;
-         }
-     }
+     for (int i = 0, n = S.length(); i < n; i++) {
        char c = S.charAt(i);
      System.out.println(S);
      System.out.print(c);
