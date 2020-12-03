@@ -49,20 +49,20 @@
    }
 
    public void calculateCheckNumber(){
-     String S = longNumber.substring(0, 15);
-     for (int i = 0, n = S.length(); i < n; i=i+2) {
-       String m = i*2;
-       //System.out.print(m);
+     //String S = longNumber.substring(0, 15);
+     for (int i = 0, n = longNumber.substring(0, 15).length(); i < n; i=i+2) {
+       int m = i*2;
               if (m > 9) {
-                m = m-9;
-                System.out.println(m);
+                int x = m-9;
               }
 
      }
+     System.out.print(m);
+     System.out.print(x);
        //char c = S.charAt(m);
-     System.out.print(S);
+     //System.out.println(S);
      //System.out.print(c);
-   }
+     }
 
 
 
