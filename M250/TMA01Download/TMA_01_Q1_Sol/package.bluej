@@ -1,6 +1,4 @@
 #BlueJ package file
-objectbench.height=76
-objectbench.width=758
 package.editor.height=434
 package.editor.width=660
 package.editor.x=192
@@ -23,7 +21,6 @@ target1.name=CreditCardChecker
 target1.naviview.expanded=true
 target1.showInterface=false
 target1.type=ClassTarget
-target1.typeParameters=
 target1.width=140
 target1.x=70
 target1.y=10
