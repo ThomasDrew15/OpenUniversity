@@ -51,7 +51,8 @@
 
    public void calculateCheckNumber(){
      String Start = this.firstFifteen();
-     System.out.println(Start);
+     for (int i = 0; Start; i++){
+       System.out.print(i);
+     }
    }
  }
-}

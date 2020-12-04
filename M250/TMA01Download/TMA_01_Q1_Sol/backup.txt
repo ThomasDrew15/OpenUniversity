@@ -1,3 +1,3 @@
 CreditCardChecker ccc = new CreditCardChecker("4916592478445662");
 ccc.getLongNumber();
-ccc.calculateCheckNumber(longNumber);
+ccc.calculateCheckNumber();
