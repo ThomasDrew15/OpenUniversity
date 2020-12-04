@@ -48,27 +48,29 @@
           return longNumber.substring(0, 15);
    }
 
-   public void calculateCheckNumber(){
-     //String S = longNumber.substring(0, 15);
-     for (int i = 0, n = longNumber.substring(0, 15).length(); i < n; i=i+2) {
-        char x = longNumber.charAt(i);
-        System.out.println(x);
-        
+   public void calculateCheckNumber(String longNumber){
+     for (int i = 0, longNumber.length() -1; i++) {
+       int result = 0;
+       if (i%2 == 0)
+       {
+         int evenIndexValue = longNumber.charAt(i)*2;
+         if (evenIndexValue > 9)
+          evenIndexValue = evenIndexValue - 9;
+          result = result + evenIndexValue;
+        }
+        else
+        {
+          result = result + longNumber.charAt(i);
+        }
+      }
+    }
+
         //char S = longNumber.charAt(i);
         //System.out.println(S);
 
               }
-            
-     
+
+
          }
-  
+
       }
-
-     
-
-     
-
-
-
-
-
