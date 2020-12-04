@@ -75,20 +75,14 @@
             result = result + oIV;
          }
          System.out.print(result);
-         int num = result;
-         int sum = 0;
-         while (num > 0) {
-           sum = sum + num % 10;
-           num = num / 10;
-         }
-         System.out.println(sum);
 
-
-
-       //System.out.println("awooga" + Character.getNumericValue('i'));
+         //System.out.println("awooga" + Character.getNumericValue('i'));
 
        //System.out.print("bongos" + i);
        //System.out.println("gerryrig" + evenIndexValue);
      }
+
+      }
+
    }
  }
