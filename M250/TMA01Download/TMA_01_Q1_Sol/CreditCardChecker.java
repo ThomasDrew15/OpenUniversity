@@ -49,18 +49,18 @@
    }
 
    public void calculateCheckNumber(String longNumber){
-     for (int i = 0; i firstFifteen; i++) {
+     for (int i = 0; n < firstFifteen(); i < n; i++) {
        int result = 0;
        if (i%2 == 0)
        {
          int evenIndexValue = longNumber.charAt(i)*2;
          if (evenIndexValue > 9)
-          evenIndexValue = evenIndexValue - 9
+          evenIndexValue = evenIndexValue - 9;
           result = result + evenIndexValue;
         }
         else
         {
-          result = result + longNumber.charAt(i)
+          result = result + longNumber.charAt(i);
         }
       }
       System.out.println(result);
