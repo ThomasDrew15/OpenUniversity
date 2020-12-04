@@ -14,7 +14,7 @@
     * instance variable longNumber is
     * a string
     */
-   private String longNumber;
+   public String longNumber;
 
 
    /**
@@ -49,7 +49,7 @@
    }
 
    public void calculateCheckNumber(String longNumber){
-     for (int i = 0, longNumber.length() -1; i++) {
+     for (int i = 0; i < longNumber.length() -1; i++) {
        int result = 0;
        if (i%2 == 0)
        {
@@ -60,17 +60,14 @@
         }
         else
         {
-          result = result + longNumber.charAt(i);
+          result = result + longNumber.charAt(i)
         }
       }
+      System.out.println(result);
     }
+
 
         //char S = longNumber.charAt(i);
         //System.out.println(S);
 
-              }
-
-
-         }
-
-      }
+ }
