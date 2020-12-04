@@ -74,15 +74,13 @@
             //System.out.println(oIV);
             result = result + oIV;
          }
-         System.out.print(result);
+        System.out.print(result);
+       
 
-         //System.out.println("awooga" + Character.getNumericValue('i'));
-
-       //System.out.print("bongos" + i);
-       //System.out.println("gerryrig" + evenIndexValue);
      }
-
-      }
-
+     
    }
+   //return result;
+   
  }
+
