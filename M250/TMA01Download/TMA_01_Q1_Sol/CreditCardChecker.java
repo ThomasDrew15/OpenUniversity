@@ -50,9 +50,38 @@
 
 
    public void calculateCheckNumber(){
-     String Start = this.firstFifteen();
-     for (int i = 0; Start; i++){
-       System.out.print(i);
+      String Start = firstFifteen();
+      //System.out.println("ahhh" + Start);
+     for (int i = 0; i < Start.length(); i++){
+        int result = 0;
+        if (i%2 == 0){
+         //System.out.print(i);
+         char evenIndexValue = Start.charAt(i);
+         int eIV = Character.getNumericValue(evenIndexValue);
+         eIV = eIV*2;
+         if (eIV > 9){
+            eIV = eIV - 9;
+
+         }
+         result = result + eIV;
+         //int even = Character.getNumericValue('i');
+         //Start.charAt(i);
+         //System.out.println("Crickey" + eIV);
+         }
+         else{
+            char oddIndexValue = Start.charAt(i);
+            int oIV = Character.getNumericValue(oddIndexValue);
+            //System.out.println(oIV);
+            result = result + oIV;
+         }
+         System.out.print(result);
+
+
+
+       //System.out.println("awooga" + Character.getNumericValue('i'));
+
+       //System.out.print("bongos" + i);
+       //System.out.println("gerryrig" + evenIndexValue);
      }
    }
  }
