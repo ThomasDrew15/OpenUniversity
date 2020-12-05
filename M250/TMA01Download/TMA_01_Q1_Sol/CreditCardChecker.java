@@ -78,7 +78,7 @@
         int sum = 0;
         while (result > 0) {
           sum = sum + result % 10;
-          num = num / 10;
+          result = result / 10;
         }
         System.out.println(sum);
 
