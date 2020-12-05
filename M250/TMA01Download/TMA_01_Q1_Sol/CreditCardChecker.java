@@ -77,8 +77,8 @@
         System.out.print(result);
         for (int a = 0; a < Start.length(); a++){
           int sum = 0;
-          char value = Start.charAt(i);
-          int sum = Character.getNumericValue(value);
+          char value = Start.charAt(a);
+          sum = Character.getNumericValue(value);
           sum = sum % 10;
           result = result + (sum / 10);
         }
