@@ -75,12 +75,14 @@
             result = result + oIV;
          }
         System.out.print(result);
-        int sum = 0;
-        while (result > 0) {
-          sum = sum + result % 10;
-          result = result / 10;
+        for (int a = 0; a < Start.length(); a++){
+          int sum = 0;
+          char value = Start.charAt(i);
+          int sum = Character.getNumericValue(value);
+          sum = sum % 10;
+          result = result + (sum / 10);
         }
-        System.out.println(sum);
+        System.out.println(result);
 
 
      }
