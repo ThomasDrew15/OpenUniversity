@@ -75,12 +75,17 @@
             result = result + oIV;
          }
         System.out.print(result);
-       
+        int sum = 0;
+        while (result > 0) {
+          sum = sum + result % 10;
+          num = num / 10;
+        }
+        System.out.println(sum);
+
 
      }
-     
+
    }
    //return result;
-   
- }
 
+ }
