@@ -75,12 +75,13 @@
             result = result + oIV;
          }
         System.out.print(result);
-       
+        for (int i = 0; i < result.length(); i++){
+          System.out.println("to make S" + i)
+
 
      }
-     
+
    }
    //return result;
-   
- }
 
+ }
