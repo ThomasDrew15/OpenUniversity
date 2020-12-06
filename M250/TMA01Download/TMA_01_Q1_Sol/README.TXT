@@ -8,6 +8,7 @@ USER INSTRUCTIONS:
 CreditCardChecker ccc = new CreditCardChecker("4916592478445662");
 ccc.getLongNumber();
 ccc.calculateCheckNumber();
+ccc.validateNumberResult();
 
 
 //Credit card numbers to check
