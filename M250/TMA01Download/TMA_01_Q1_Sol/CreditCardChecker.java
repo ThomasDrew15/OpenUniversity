@@ -49,11 +49,11 @@
    }
 
 
-   public void calculateCheckNumber(){
+   public String calculateCheckNumber(){
       String Start = firstFifteen();
       //System.out.println("ahhh" + Start);
      for (int i = 0; i < Start.length(); i++){
-        int result = 0;
+        String result = "";
         if (i%2 == 0){
          //System.out.print(i);
          char evenIndexValue = Start.charAt(i);
@@ -75,19 +75,17 @@
             result = result + oIV;
          }
         System.out.print(result);
-        for (int a = 0; a < Start.length(); a++){
-          int sum = 0;
-          char value = Start.charAt(a);
-          sum = Character.getNumericValue(value);
-          sum = sum % 10;
-          result = result + (sum / 10);
-        }
+        return result;
+
+        String S = "";
         System.out.println(result);
+        //for (int a = 0; a = result.length(); a++){
+         //System.out.println(a);
+         //}
 
 
      }
 
-   }
-   //return result;
-
  }
+}
+   //return result;
