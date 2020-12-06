@@ -50,6 +50,8 @@
 
 
    public void calculateCheckNumber(){
+     C = longNumber%10
+     System.out.println(C);
       String Start = firstFifteen();
       int result = 0;
       int S = 0;
