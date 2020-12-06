@@ -50,12 +50,14 @@
 
 
    public void calculateCheckNumber(){
-     C = longNumber%10;
-     System.out.println(C);
-      String Start = firstFifteen();
-      int result = 0;
-      int S = 0;
-      //System.out.println("ahhh" + Start);
+     int C = 0;
+     char cChar = longNumber.charAt(longNumber.length() -1);
+     C = Character.getNumericValue(cChar);
+     System.out.println("Check digit " + C);
+     String Start = firstFifteen();
+     int result = 0;
+     int S = 0;
+     //System.out.println("ahhh" + Start);
      for (int i = 0; i < Start.length(); i++){
         if (i%2 == 0){
          //System.out.print(i);
@@ -91,9 +93,26 @@
      }
 
 
-     System.out.println(result);
+     System.out.println("S " + result);
      //System.out.println(sum);
+     int finalS = 0;
+     finalS = (result /10+1) *10;
+     System.out.println("S rounded up " + finalS);
 
+     int confirmation = 0;
+     confirmation = finalS - C;
+     System.out.println("confirmation of S " + confirmation);
+   }
+
+   public void validNumberResult(){
+     if (confirmation != result){
+          System.out.println("This number is not valid");
+        }
+          else{
+             System.out.println("This number is valid");
+           }
+   }
  }
 }
+
    //return result;
