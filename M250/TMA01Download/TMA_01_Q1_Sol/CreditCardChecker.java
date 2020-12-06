@@ -51,8 +51,8 @@
 
    public void calculateCheckNumber(){
       String Start = firstFifteen();
-      String result = "";
-      String S = "";
+      int result = 0;
+      int S = 0;
       //System.out.println("ahhh" + Start);
      for (int i = 0; i < Start.length(); i++){
         if (i%2 == 0){
@@ -79,16 +79,18 @@
         //return result;
         //System.out.println(result);
      }
-     for (int a = 0; a < result.length(); a++){
-     //System.out.println(a);
-     char additionValue = result.charAt(a);
-     int aV = Character.getNumericValue(additionValue);
-     System.out.println(aV + "bazinga!");
-     S = S + aV;
+     //int num = result;
+     S = result;
+     int sum = 0;
+     while (S > 0) {
+        sum = sum + S % 10;
+        //System.out.println(S);
+        S = S / 10;
      }
 
+
      System.out.println(result);
-     System.out.println(S);
+     //System.out.println(sum);
 
  }
 }
