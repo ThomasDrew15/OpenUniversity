@@ -51,10 +51,10 @@
    int confirmation = 0;
    int result = 0;
    public void calculateCheckNumber(){
-     int C = 0;
-     char cChar = longNumber.charAt(longNumber.length() -1);
-     C = Character.getNumericValue(cChar);
-     System.out.println("Check digit " + C);
+     int checkDigit = 0;
+     char checkDigitChar = longNumber.charAt(longNumber.length() -1);
+     checkDigit = Character.getNumericValue(checkDigitChar);
+     System.out.println("Check digit " + checkDigit);
      String Start = firstFifteen();
      //int result = 0;
      int S = 0;
