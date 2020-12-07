@@ -12,4 +12,6 @@ comment3.params=
 comment3.target=java.lang.String\ firstFifteen()
 comment4.params=
 comment4.target=void\ calculateCheckNumber()
-numComments=5
+comment5.params=
+comment5.target=void\ validNumberResult()
+numComments=6

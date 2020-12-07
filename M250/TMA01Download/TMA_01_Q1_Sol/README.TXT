@@ -8,6 +8,7 @@ USER INSTRUCTIONS:
 CreditCardChecker ccc = new CreditCardChecker("4916592478445662");
 ccc.getLongNumber();
 ccc.calculateCheckNumber();
+ccc.validNumberResult();
 
 
 //Credit card numbers to check
@@ -19,3 +20,18 @@ ccc.calculateCheckNumber();
 "4916618655349234"    // not valid - calculated check digit is 5
 "4485735287746637"    // could be valid
 "4365300588292181483" // not valid (too long)
+
+        for (int a = 0; a < result.length(); a++){
+         //System.out.println(a);
+         char additionValue = result.charAt(a);
+         int aV = Character.getNumericValue(additionValue);
+         S = S + aV;
+         }
+
+     for (int a = 0; a < result.length(); a++){
+     //System.out.println(a);
+     char additionValue = result.charAt(a);
+     int aV = Character.getNumericValue(additionValue);
+     System.out.println(aV + "bazinga!");
+     S = S + aV;
+     }
