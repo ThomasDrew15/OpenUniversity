@@ -107,10 +107,10 @@
 
    public void validNumberResult(){
      if (confirmation != result){
-          System.out.println("This number is not valid");
+          System.out.println("Isn't valid");
         }
           else{
-             System.out.println("This number is valid");
+             System.out.println("Could be valid");
            }
    }
  }
