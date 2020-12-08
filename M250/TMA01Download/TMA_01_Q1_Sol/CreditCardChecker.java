@@ -68,7 +68,7 @@
      System.out.println("Check digit " + checkDigit);
      String Start = firstFifteen();
      //int result = 0;
-     int S = 0;
+     int numsForAdd = 0;
      //System.out.println("ahhh" + Start);
      for (int i = 0; i < Start.length(); i++){
         if (i%2 == 0){
@@ -96,12 +96,12 @@
         //System.out.println(result);
      }
      //int num = result;
-     S = result;
+     numsForAdd = result;
      int sum = 0;
-     while (S > 0) {
-        sum = sum + S % 10;
+     while (numsForAdd > 0) {
+        sum = sum + numsForAdd % 10;
         //System.out.println(S);
-        S = S / 10;
+        numsForAdd = numsForAdd / 10;
      }
 
 
