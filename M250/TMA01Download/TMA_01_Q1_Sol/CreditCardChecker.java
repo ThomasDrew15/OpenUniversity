@@ -101,7 +101,7 @@
      System.out.println("S rounded up " + finalS);
 
      //int confirmation = 0;
-     confirmation = finalS - C;
+     confirmation = finalS - checkDigit;
      System.out.println("confirmation of S " + confirmation);
    }
 
