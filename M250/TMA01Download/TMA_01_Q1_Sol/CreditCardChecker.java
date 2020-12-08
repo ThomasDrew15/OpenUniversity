@@ -61,7 +61,7 @@
    */
    int confirmation = 0;
    int result = 0;
-   public void calculateCheckNumber(){
+   public int calculateCheckNumber(){
      int checkDigit = 0;
      char checkDigitChar = longNumber.charAt(longNumber.length() -1);
      checkDigit = Character.getNumericValue(checkDigitChar);
@@ -114,6 +114,7 @@
      //int confirmation = 0;
      confirmation = finalS - checkDigit;
      System.out.println("confirmation of S " + confirmation);
+     return checkDigit;
    }
    /**
    * Confirms that longNumber could be a valid account number
