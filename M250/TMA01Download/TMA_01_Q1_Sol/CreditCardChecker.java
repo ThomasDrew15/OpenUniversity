@@ -43,11 +43,22 @@
        return false;
      }
    }
-
+   /**
+   * creates substring of first 15 indexes in the string getLongNumber
+   */
    public String firstFifteen(){
           return longNumber.substring(0, 15);
    }
-
+   /**
+   * creates check digit from last index of longNumber
+   * creates integer from firstFifteen() where odd index values
+   * are *2, then -9 if over 9, then added to an integer. Even index
+   * values are left alone
+   * and added to the same integer as the processed even value indexes
+   * that integer is then rounded up to the nearest 10, the check digit is
+   * subtracted and the product should be the same as the integer prior to
+   * rounding
+   */
    int confirmation = 0;
    int result = 0;
    public void calculateCheckNumber(){
@@ -104,7 +115,9 @@
      confirmation = finalS - checkDigit;
      System.out.println("confirmation of S " + confirmation);
    }
-
+   /**
+   * Confirms that longNumber could be a valid account number
+   */
    public void validNumberResult(){
      if (confirmation != result){
           System.out.println("Isn't valid");
