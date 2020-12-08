@@ -80,18 +80,6 @@
             //System.out.println(oIV);
             result = result + oIV;
          }
-<<<<<<< HEAD
-        System.out.print(result);
-        for (int i = 0; i < result.length(); i++){
-          System.out.println("to make S" + i)
-
-
-     }
-
-   }
-   //return result;
-
-=======
         //System.out.println(result);
         //return result;
         //System.out.println(result);
@@ -125,5 +113,4 @@
              System.out.println("Could be valid");
            }
    }
->>>>>>> bbe63d654aa48a1b388e8b604b0f76367c507840
  }
