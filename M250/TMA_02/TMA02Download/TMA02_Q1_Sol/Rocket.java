@@ -49,7 +49,7 @@ public class Rocket
      //to be written in Q1(a)(i)
      
           
-     return 0;
+     return this.body;
    }
 
    private int getBodyYPos()
