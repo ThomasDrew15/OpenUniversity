@@ -49,7 +49,7 @@ public class Rocket
      //to be written in Q1(a)(i)
      
           
-     return this.xPos;
+     return this.body.setXPos(getBodyXPos());
    }
 
    private int getBodyYPos()
