@@ -56,14 +56,14 @@ public class Rocket
    {
      //to be written in Q1(a)(ii)
      
-     return 0;
+     return nose.getYPos(-nose)
    }
    
    private int getJetXPos()
    {
       //to be written in Q1(a)(iii)
-      
-      return 0;
+
+      return nose.getXPos();
    }
 
    private int getJetYPos()
