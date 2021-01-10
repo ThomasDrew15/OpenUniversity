@@ -95,7 +95,8 @@ public class Rocket
    public void pulse1()
    {
       //to be written in Q1(c)(i)
-   
+      this.jet.setColour(OUColour.RED);
+      this.jet.setDiameter(6);
    }
 
    /**
@@ -106,7 +107,8 @@ public class Rocket
    public void pulse2()
    {
       //to be written in Q1(c)(ii)
-    
+      this.jet.setColour(OUColour.ORANGE);
+      this.jet.setDiameter(12);
    }
 
    /**
@@ -117,7 +119,8 @@ public class Rocket
    public void pulse3()
    {
       //to be written in Q1(c)(iii)
-      
+      this.jet.setColour(OUColour.RED);
+      this.jet.setDiameter(24);
    }
 
    /**
