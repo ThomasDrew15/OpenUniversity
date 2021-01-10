@@ -84,6 +84,7 @@ public class Rocket
       //to be written in Q1(b)
       this.nose.setYPos(50);
       this.body.setYPos(getBodyYPos());
+      this.jet.setYPos(getJetYPos());
    }
 
    /**
