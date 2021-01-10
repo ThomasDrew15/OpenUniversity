@@ -10,3 +10,6 @@ r.moveRocketBy(100);
 r.pulse1();
 r.pulse2();
 r.pulse3();
+
+Rocket r = new Rocket(t, s, c);
+r.ignition();

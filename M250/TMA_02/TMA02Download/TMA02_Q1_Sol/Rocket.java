@@ -131,6 +131,13 @@ public class Rocket
    public void ignition()
    {
       //to be written in Q1(d)
+      for i in moveRocketBy(anInt);
+      {
+         pulse1();
+         pulse2();
+         pulse3();
+      }
+
 
 
     
