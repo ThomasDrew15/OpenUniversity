@@ -36,7 +36,7 @@ public class Rocket
       //The jet is invisible to begin with, because it uses
       //the background colour of WHITE, but you can use BLACK
       //to help you see it while testing
-      this.jet.setColour(OUColour.BLACK); 
+      this.jet.setColour(OUColour.WHITE); 
       this.jet.setDiameter(10);           
 
       //sets the jet position relative to the body, using the helper methods
@@ -56,21 +56,21 @@ public class Rocket
    {
      //to be written in Q1(a)(ii)
      
-     return nose.getYPos(-nose)
+     return (nose.getYPos()+20);
    }
    
    private int getJetXPos()
    {
       //to be written in Q1(a)(iii)
 
-      return nose.getXPos();
+      return (nose.getXPos()+5);
    }
 
    private int getJetYPos()
    {
      //to be written in Q1(a)(iv)
      
-     return 0;
+     return (nose.getYPos()+40);
    }
 
    /**
