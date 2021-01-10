@@ -62,8 +62,7 @@ public class Rocket
    private int getJetXPos()
    {
       //to be written in Q1(a)(iii)
-
-      return (nose.getXPos()Square.getLength()/2);
+      return (nose.getXPos()+10);
    }
 
    private int getJetYPos()
