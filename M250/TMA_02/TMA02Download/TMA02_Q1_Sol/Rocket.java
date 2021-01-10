@@ -82,9 +82,8 @@ public class Rocket
    public void moveRocketBy(int anInt)
    {
       //to be written in Q1(b)
-      moveRocketBy(10):
-      nose.setXPos(50)+anInt;
-      getBodyXPos()
+      nose.setXPos(50 + anInt);
+      getBodyXPos();
    }
 
    /**
