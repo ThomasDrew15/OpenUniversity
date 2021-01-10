@@ -96,6 +96,7 @@ public class Rocket
       //to be written in Q1(c)(i)
       this.jet.setColour(OUColour.RED);
       this.jet.setDiameter(6);
+      this.delay(200);
    }
 
    /**
@@ -108,6 +109,7 @@ public class Rocket
       //to be written in Q1(c)(ii)
       this.jet.setColour(OUColour.ORANGE);
       this.jet.setDiameter(12);
+      this.delay(200);
    }
 
    /**
@@ -120,6 +122,7 @@ public class Rocket
       //to be written in Q1(c)(iii)
       this.jet.setColour(OUColour.RED);
       this.jet.setDiameter(24);
+      this.delay(200);
    }
 
    /**
@@ -128,6 +131,8 @@ public class Rocket
    public void ignition()
    {
       //to be written in Q1(d)
+
+
     
    }
 
