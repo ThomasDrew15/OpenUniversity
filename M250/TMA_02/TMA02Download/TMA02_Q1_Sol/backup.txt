@@ -1,7 +1,8 @@
 Triangle t = new Triangle();
 Square s = new Square();
 Circle c = new Circle();
-c.setColour(OUColour.BLACK);
+
 Rocket r = new Rocket(t, s, c);
+c.setColour(OUColour.BLACK);
 
 r.moveRocketBy(100);
