@@ -131,7 +131,7 @@ public class Rocket
    public void ignition()
    {
       //to be written in Q1(d)
-      for (int i: anInt
+
       {
          pulse1();
          pulse2();
