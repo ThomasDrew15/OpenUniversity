@@ -62,7 +62,7 @@ public class Rocket
    private int getJetXPos()
    {
       //to be written in Q1(a)(iii)
-      return (nose.getXPos()+10);
+      return (nose.getXPos()+5);
    }
 
    private int getJetYPos()
@@ -96,7 +96,7 @@ public class Rocket
       //to be written in Q1(c)(i)
       this.jet.setColour(OUColour.RED);
       this.jet.setDiameter(6);
-      return (nose.getXPos()+5);
+      this.jet.setXPos(getJetXPos());
       this.delay(200);
    }
 
@@ -110,7 +110,7 @@ public class Rocket
       //to be written in Q1(c)(ii)
       this.jet.setColour(OUColour.ORANGE);
       this.jet.setDiameter(12);
-      return (nose.getXPos()+5);
+      this.jet.setXPos(getJetXPos()+5);
       this.delay(200);
    }
 
@@ -124,7 +124,7 @@ public class Rocket
       //to be written in Q1(c)(iii)
       this.jet.setColour(OUColour.RED);
       this.jet.setDiameter(24);
-      return (nose.getXPos()+5);
+      this.jet.setXPos(getJetXPos());
       this.delay(200);
    }
 
