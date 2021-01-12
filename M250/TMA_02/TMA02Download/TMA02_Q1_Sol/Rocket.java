@@ -195,7 +195,8 @@ public class Rocket
     */
    public void launch()
    {
-      //to be written in Q1(f) 
+      //to be written in Q1(f)
+      OUDialog.alert("Remember to save your file before exiting");
      
    }
 
