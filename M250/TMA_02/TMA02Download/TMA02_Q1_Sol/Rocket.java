@@ -154,10 +154,12 @@ public class Rocket
    public void animateRocket(int speed)
    {
       //to be written in Q1(e)
+      int i = 0;
       while (i <= 100)
       {
          ignition();
-         moveRocketBy();
+         moveRocketBy(anInt);
+         i+= i;
       }
 
 
