@@ -154,8 +154,8 @@ public class Rocket
    public void animateRocket(int speed)
    {
       //to be written in Q1(e)
-      int i = 0;
-      while (i <= 100)
+      //for(init;condition;incr/decr)
+      for(int i=0;i<=100;i++)
       {
          ignition();
          i+= i;

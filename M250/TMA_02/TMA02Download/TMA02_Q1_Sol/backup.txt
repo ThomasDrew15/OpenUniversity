@@ -7,3 +7,5 @@ Rocket r = new Rocket(t, s, c);
 c.setColour(OUColour.BLACK);
 
 r.ignition();
+
+r.animateRocket(10);
