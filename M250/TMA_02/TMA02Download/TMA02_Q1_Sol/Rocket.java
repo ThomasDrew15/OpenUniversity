@@ -158,6 +158,7 @@ public class Rocket
       for(int i=0;i<=100;i++)
       {
          ignition();
+         moveRocketBy(int anInt)
          i+= i;
       }
 
