@@ -154,7 +154,13 @@ public class Rocket
    public void animateRocket(int speed)
    {
       //to be written in Q1(e)
-      
+      while (i <= 100)
+      {
+         ignition();
+         moveRocketBy();
+      }
+
+
    }
 
    /**
