@@ -157,8 +157,20 @@ public class Rocket
       //for(init;condition;incr/decr)
       for(int i=0;i<=100;i++)
       {
-         system.out.print(i)
-
+         System.out.print(i);
+         if (i % 2 = 1)
+         {
+            pulse1();
+         }
+         else if (i % 3 = 2)
+         {
+            pulse2();
+         }
+         else if (i % 4 = 3)
+         {
+            pulse3();
+         }
+         else (moveRocketBy();)
       }
 
 
