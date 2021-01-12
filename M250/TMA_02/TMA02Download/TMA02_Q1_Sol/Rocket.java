@@ -81,7 +81,7 @@ public class Rocket
    public void moveRocketBy(int anInt)
    {
       //to be written in Q1(b)
-      this.nose.setYPos(nose.setYPos()+anInt);
+      this.nose.setYPos(-anInt);
       this.body.setYPos(getBodyYPos());
       this.jet.setYPos(getJetYPos());
    }
