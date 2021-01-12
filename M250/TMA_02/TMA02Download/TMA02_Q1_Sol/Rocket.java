@@ -158,7 +158,6 @@ public class Rocket
       while (i <= 100)
       {
          ignition();
-         moveRocketBy(anInt);
          i+= i;
       }
 
