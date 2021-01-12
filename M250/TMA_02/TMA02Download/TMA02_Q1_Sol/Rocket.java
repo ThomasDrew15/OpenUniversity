@@ -97,7 +97,7 @@ public class Rocket
       this.jet.setColour(OUColour.RED);
       this.jet.setDiameter(6);
       this.jet.setXPos(getJetXPos());
-      this.delay(200);
+      this.delay(500);
    }
 
    /**
@@ -110,8 +110,8 @@ public class Rocket
       //to be written in Q1(c)(ii)
       this.jet.setColour(OUColour.ORANGE);
       this.jet.setDiameter(12);
-      this.jet.setXPos(getJetXPos()+5);
-      this.delay(200);
+      this.jet.setXPos(getJetXPos());
+      this.delay(500);
    }
 
    /**
@@ -125,7 +125,7 @@ public class Rocket
       this.jet.setColour(OUColour.RED);
       this.jet.setDiameter(24);
       this.jet.setXPos(getJetXPos());
-      this.delay(200);
+      this.delay(500);
    }
 
    /**
@@ -158,19 +158,19 @@ public class Rocket
       for(int i=0;i<=100;i++)
       {
          System.out.print(i);
-         if (i % 2 = 1)
+         if (i % 2 == 1)
          {
             pulse1();
          }
-         else if (i % 3 = 2)
+         else if (i % 3 == 2)
          {
             pulse2();
          }
-         else if (i % 4 = 3)
+         else
          {
             pulse3();
          }
-         else (moveRocketBy();)
+         //else moveRocketBy(anInt);
       }
 
 
