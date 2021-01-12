@@ -200,6 +200,7 @@ public class Rocket
       String inputString;
       inputString = OUDialog.request("Please enter a number");
       inputNumber = Integer.parseInt(inputString);
+      System.out.print(inputNumber)
      
    }
 
