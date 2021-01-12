@@ -81,7 +81,7 @@ public class Rocket
    public void moveRocketBy(int anInt)
    {
       //to be written in Q1(b)
-      this.nose.setYPos(50);
+      this.nose.setYPos(anInt);
       this.body.setYPos(getBodyYPos());
       this.jet.setYPos(getJetYPos());
    }
@@ -200,7 +200,7 @@ public class Rocket
       String inputString;
       inputString = OUDialog.request("Please enter a number");
       inputNumber = Integer.parseInt(inputString);
-      System.out.print(inputNumber)
+      System.out.print(inputNumber);
      
    }
 
