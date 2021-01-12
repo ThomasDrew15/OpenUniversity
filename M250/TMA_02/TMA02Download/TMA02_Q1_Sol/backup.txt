@@ -6,7 +6,7 @@ Rocket r = new Rocket(t, s, c);
 
 c.setColour(OUColour.BLACK);
 
-r.moveRocketBy(1);
+r.moveRocketBy(349);
 
 r.ignition();
 

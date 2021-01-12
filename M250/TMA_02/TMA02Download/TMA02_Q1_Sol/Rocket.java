@@ -201,6 +201,11 @@ public class Rocket
       inputString = OUDialog.request("Please enter a number");
       inputNumber = Integer.parseInt(inputString);
       System.out.print(inputNumber);
+
+      if inputNumber >= 349
+      {
+         OUDialog.alert("Select a lower number or the rocket will disappear");
+      }
      
    }
 
