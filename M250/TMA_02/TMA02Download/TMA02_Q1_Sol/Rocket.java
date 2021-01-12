@@ -157,20 +157,24 @@ public class Rocket
       //for(init;condition;incr/decr)
       for(int i=0;i<=100;i++)
       {
+         int action = i%4
          System.out.print(i);
-         if (i % 2 == 1)
+         if (action == 1)
          {
             pulse1();
+            System.out.print("pulse 1")
          }
-         else if (i % 3 == 2)
+         else if (action == 2)
          {
             pulse2();
+            System.out.print("pulse 2")
          }
-         else
+         else if (action == 3)
          {
             pulse3();
+            System.out.print("pulse 3")
          }
-         //else moveRocketBy(anInt);
+         else System.out.print("moveRocket";
       }
 
 
