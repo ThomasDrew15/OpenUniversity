@@ -11,3 +11,5 @@ r.moveRocketBy(1000);
 r.ignition();
 
 r.animateRocket(10);
+
+r.launch();

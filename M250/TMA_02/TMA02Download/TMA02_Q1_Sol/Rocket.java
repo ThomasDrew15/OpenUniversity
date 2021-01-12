@@ -196,7 +196,10 @@ public class Rocket
    public void launch()
    {
       //to be written in Q1(f)
-      OUDialog.alert("Remember to save your file before exiting");
+      int inputNumber;
+      String inputString;
+      inputString = OUDialog.request("Please enter a number");
+      inputNumber = Integer.parseInt(inputString);
      
    }
 
