@@ -176,7 +176,7 @@ public class Rocket
          }
          else
          {
-            moveRocketBy(speed/25);
+            moveRocketBy(speed);
             System.out.println("moveRocket");
          }
       }
@@ -201,7 +201,7 @@ public class Rocket
       String inputString;
       inputString = OUDialog.request("Please enter a number");
       inputNumber = Integer.parseInt(inputString);
-      System.out.print(inputNumber);
+      System.out.println(inputNumber);
 
       if (inputNumber >= 349)
       {
