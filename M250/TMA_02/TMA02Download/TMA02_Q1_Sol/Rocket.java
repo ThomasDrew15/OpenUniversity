@@ -176,7 +176,7 @@ public class Rocket
          }
          else
          {
-            moveRocketBy((speed/4));
+            moveRocketBy(speed/25);
             System.out.println("moveRocket");
          }
       }
