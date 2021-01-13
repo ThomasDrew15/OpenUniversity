@@ -202,13 +202,15 @@ public class Rocket
       inputNumber = Integer.parseInt(inputString);
       System.out.print(inputNumber);
 
-      if (inputNumber >= 349);
+      if (inputNumber >= 349)
       {
          OUDialog.alert("Select a lower number or the rocket will disappear");
       }
       else
       {
          OUDialog.alert("Click to continue");
+         ignition();
+         animateRocket();
       }
      
    }
