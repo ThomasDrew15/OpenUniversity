@@ -176,6 +176,7 @@ public class Rocket
          }
          else
          {
+            moveRocketBy(speed/4);
             System.out.println("moveRocket");
          }
       }
@@ -210,7 +211,7 @@ public class Rocket
       {
          OUDialog.alert("Click to continue");
          ignition();
-         animateRocket();
+         animateRocket(inputNumber);
       }
      
    }
