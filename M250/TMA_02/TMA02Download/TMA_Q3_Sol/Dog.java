@@ -35,7 +35,7 @@ public class Dog extends Pet
             happiness --;
             return happiness;
         }
-
+        return happiness;
     }
 
     public int incrementHappiness()
@@ -49,6 +49,7 @@ public class Dog extends Pet
         while (energyLevel > 0);
         {
         energyLevel --;
+        return energyLevel;
         }
         return energyLevel;
     }
