@@ -5,6 +5,7 @@
  * @author (Tom Drew)
  * @version (v1.0)
  */
+
 public class Dog extends Pet
 {
     private int happiness;
@@ -29,22 +30,35 @@ public class Dog extends Pet
 
     public int decrementHappiness()
     {
-        while energyLevel >= 0;
+        while (energyLevel >= 0);
         happiness -= 1;
+        return happiness;
     }
     public int incrementHappiness()
     {
         happiness += 1;
+        return happiness;
     }
 
     public int decrementEnergyLevel()
     {
-        while energyLevel >= 0;
+        while (energyLevel >= 0);
         energyLevel -= 1;
+        return energyLevel;
     }
     public int incrementEnergyLevel()
     {
         energyLevel += 1;
+        return energyLevel;
+    }
+
+    public void walkies()
+    {
+        while (energyLevel > 0);
+        System.out.println("I'm going for a walk!"):
+        incrementHappiness():
+        System.out.println("I'm getting hungry");
+        decrementEnergyLevel();
     }
 
 
