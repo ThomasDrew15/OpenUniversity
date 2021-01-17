@@ -79,23 +79,30 @@ public class Dog extends Pet
 
     public boolean sleep()
     {
-        if (happiness > 0 & energyLevel > 0)
-        {
-            return true;
-        }
-        else if (happiness == 0)
+        if (happiness == 0)
         {
             System.out.println("Not happy, can't sleep");
             return false;
         }
+        else if (energyLevel == 0)
+        {
+           System.out.println("Hungry, can't sleep");
+           return false;
+        }
         else
         {
-            if (energyLevel == 0)
-            {
-                System.out.println("Hungry, can't sleep");
-            }
+           return true;
         }
 
+    }
+
+    public void noWalkies()
+    {
+        System.out.print("No walkies :-(");
+        while (happiness > 0)
+        {
+            decrementHappiness();
+        }
     }
 
 
