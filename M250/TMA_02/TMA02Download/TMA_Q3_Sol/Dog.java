@@ -30,7 +30,7 @@ public class Dog extends Pet
 
     public int decrementHappiness()
     {
-        while (happiness != 0)
+        while (happiness > 0)
         {
             happiness = happiness -1;
         }
