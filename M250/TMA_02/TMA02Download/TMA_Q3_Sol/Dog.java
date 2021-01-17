@@ -98,8 +98,8 @@ public class Dog extends Pet
 
     public void noWalkies()
     {
-        System.out.print("No walkies :-(");
-        while (happiness > 0)
+        System.out.println("No walkies :-(");
+        if (happiness > 0)
         {
             decrementHappiness();
         }
