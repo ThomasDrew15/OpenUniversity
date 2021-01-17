@@ -30,13 +30,13 @@ public class Dog extends Pet
 
     public int decrementHappiness()
     {
-        while (energyLevel != 0)
+        while (happiness != 0)
         {
             happiness --;
-
         }
         return happiness;
     }
+
     public int incrementHappiness()
     {
         happiness ++;
