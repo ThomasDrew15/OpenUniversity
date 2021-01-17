@@ -32,7 +32,7 @@ public class Dog extends Pet
     {
         while (happiness != 0)
         {
-            happiness -=1;
+            happiness = happiness -1;
         }
         return happiness;
     }
