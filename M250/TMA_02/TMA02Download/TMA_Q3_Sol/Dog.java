@@ -63,19 +63,39 @@ public class Dog extends Pet
     {
         for(int i = energyLevel; i>0; decrementEnergyLevel())
         {
-            System.out.println(i);
+            //System.out.println(i); - debugging
             System.out.println("I'm going for a walk!");
             incrementHappiness();
-            System.out.println(happiness);
+            //System.out.println(happiness); - debugging
             System.out.println("I'm getting hungry");
-            //decrementEnergyLevel();
-            System.out.println(energyLevel);
+            //System.out.println(energyLevel); - debugging
             if (energyLevel == 0)
             {
                 break;
             }
         }
         System.out.println("Hungry doggo is am unhappy doggo");
+    }
+
+    public boolean sleep()
+    {
+        if (happiness > 0 & energyLevel > 0)
+        {
+            return true;
+        }
+        else if (happiness == 0)
+        {
+            System.out.println("Not happy, can't sleep");
+            return false;
+        }
+        else
+        {
+            if (energyLevel == 0)
+            {
+                System.out.println("Hungry, can't sleep");
+            }
+        }
+
     }
 
 
