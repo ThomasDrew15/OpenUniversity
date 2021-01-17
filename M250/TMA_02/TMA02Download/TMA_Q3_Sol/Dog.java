@@ -21,7 +21,7 @@ public class Dog extends Pet
 
     public Dog(String aName, String aDescription) {
         super(aName, aDescription);
-        this.happiness = 2
+        this.happiness = 2;
     }
 
 }
