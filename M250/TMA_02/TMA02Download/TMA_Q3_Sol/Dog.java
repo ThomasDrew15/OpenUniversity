@@ -33,8 +33,9 @@ public class Dog extends Pet
         while (happiness > 0)
         {
             happiness --;
+            return happiness;
         }
-        return happiness;
+
     }
 
     public int incrementHappiness()
