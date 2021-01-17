@@ -11,18 +11,23 @@ public class Dog extends Pet
     private int energyLevel;
 
 
-    public void getHappiness(int happyInt) {
+    public void getHappiness(int happyInt)
+    {
         this.happiness = happyInt;
     }
 
-    public void getEnergyLevel(int energyInt) {
+    public void getEnergyLevel(int energyInt)
+    {
         this.energyLevel = energyInt;
     }
 
-    public Dog(String aName, String aDescription) {
+    public Dog(String aName, String aDescription)
+    {
         super(aName, aDescription);
         this.happiness = 2;
     }
+
+
 
 }
 
