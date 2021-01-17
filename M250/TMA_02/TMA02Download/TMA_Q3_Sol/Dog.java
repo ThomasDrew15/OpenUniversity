@@ -5,7 +5,8 @@
  * @author (Tom Drew)
  * @version (v1.0)
  */
-public class Dog extends Pet {
+public class Dog extends Pet
+{
     private int happiness;
     private int energyLevel;
 
@@ -18,6 +19,10 @@ public class Dog extends Pet {
         this.energyLevel = energyInt;
     }
 
+    public Dog(String aName, String aDescription) {
+        super(aName, aDescription);
+        this.happiness = 2
+    }
 
 }
 
