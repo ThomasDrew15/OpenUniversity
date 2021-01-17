@@ -30,11 +30,12 @@ public class Dog extends Pet
 
     public int decrementHappiness()
     {
-        while (energyLevel != 0){
+        while (energyLevel != 0)
+        {
             happiness --;
-            return happiness;
-        }
 
+        }
+        return happiness;
     }
     public int incrementHappiness()
     {
@@ -44,11 +45,11 @@ public class Dog extends Pet
 
     public int decrementEnergyLevel()
     {
-        while (energyLevel != 0);{
+        while (energyLevel != 0);
+        {
         energyLevel --;
+        }
         return energyLevel;
-    }
-
     }
     public int incrementEnergyLevel()
     {
