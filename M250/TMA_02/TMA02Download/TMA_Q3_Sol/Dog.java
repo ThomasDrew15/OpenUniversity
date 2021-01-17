@@ -46,10 +46,10 @@ public class Dog extends Pet
 
     public int decrementEnergyLevel()
     {
-        while (energyLevel > 0);
+        while (energyLevel > 0)
         {
-        energyLevel --;
-        return energyLevel;
+           energyLevel --;
+           return energyLevel;
         }
         return energyLevel;
     }
@@ -61,8 +61,9 @@ public class Dog extends Pet
 
     public void walkies()
     {
-        while (energyLevel > 0)
+        for(int i=energyLevel;i > 0; i++)
         {
+            System.out.println(i);
             System.out.println("I'm going for a walk!");
             incrementHappiness();
             System.out.println(happiness);
