@@ -54,13 +54,15 @@ public class Dog extends Pet
 
     public void walkies()
     {
-        while (energyLevel > 0);
-        System.out.println("I'm going for a walk!");
-        incrementHappiness();
-        System.out.println(happiness);
-        System.out.println("I'm getting hungry");
-        decrementEnergyLevel();
-        System.out.println(energyLevel);
+        while (energyLevel > 0)
+        {
+            System.out.println("I'm going for a walk!");
+            incrementHappiness();
+            System.out.println(happiness);
+            System.out.println("I'm getting hungry");
+            decrementEnergyLevel();
+            System.out.println(energyLevel);
+        }
     }
 
 
