@@ -12,14 +12,14 @@ public class Dog extends Pet
     private int energyLevel;
 
 
-    public void getHappiness(int happyInt)
+    public int getHappiness(int happyInt)
     {
-        this.happiness = happyInt;
+        return this.happiness = happyInt;
     }
 
     public void getEnergyLevel(int energyInt)
     {
-        this.energyLevel = energyInt;
+        return this.energyLevel = energyInt;
     }
 
     public Dog(String aName, String aDescription)
@@ -55,8 +55,8 @@ public class Dog extends Pet
     public void walkies()
     {
         while (energyLevel > 0);
-        System.out.println("I'm going for a walk!"):
-        incrementHappiness():
+        System.out.println("I'm going for a walk!");
+        incrementHappiness();
         System.out.println("I'm getting hungry");
         decrementEnergyLevel();
     }
