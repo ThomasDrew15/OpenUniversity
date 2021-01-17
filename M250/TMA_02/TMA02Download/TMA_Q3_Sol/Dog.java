@@ -73,9 +73,9 @@ public class Dog extends Pet
             if (energyLevel == 0)
             {
                 break;
-                Ssystem.out.println("Hungry doggo is am unhappy doggo")
             }
         }
+        System.out.println("Hungry doggo is am unhappy doggo");
     }
 
 
