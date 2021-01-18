@@ -46,7 +46,7 @@ public class Rocket
 
    private int getBodyXPos()
    {
-     //to be written in Q1(a)(i)
+     //gets position of body on the X axis
      
           
      return nose.getXPos();
@@ -54,20 +54,21 @@ public class Rocket
 
    private int getBodyYPos()
    {
-     //to be written in Q1(a)(ii)
+     //gets position of body on the Y axis
      
      return (nose.getYPos()+20);
    }
    
    private int getJetXPos()
    {
-      //to be written in Q1(a)(iii)
+      //gets position of jet on the X axis
+
       return (nose.getXPos()+5);
    }
 
    private int getJetYPos()
    {
-     //to be written in Q1(a)(iv)
+     //gets position of jet on the Y axis
      
      return (nose.getYPos()+40);
    }
@@ -80,7 +81,7 @@ public class Rocket
     */
    public void moveRocketBy(int anInt)
    {
-      //to be written in Q1(b)
+      //move the rocket upwards by the amount given by the method's argument
       this.nose.setYPos(nose.getYPos()-anInt);
       this.body.setYPos(getBodyYPos());
       this.jet.setYPos(getJetYPos());
@@ -140,10 +141,6 @@ public class Rocket
          pulse2();
          pulse3();
       }
-
-
-
-    
    }
 
    /**
