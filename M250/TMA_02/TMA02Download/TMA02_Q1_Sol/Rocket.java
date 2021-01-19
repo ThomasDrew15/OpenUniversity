@@ -70,7 +70,7 @@ public class Rocket
    {
      //gets position of jet on the Y axis
      
-     return (nose.getYPos()+40);
+     return body.getYPos() + body.getLength();
    }
 
    /**

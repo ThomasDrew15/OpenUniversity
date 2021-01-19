@@ -4,12 +4,13 @@ Circle c = new Circle();
 
 Rocket r = new Rocket(t, s, c);
 
-c.setColour(OUColour.BLACK);
+c.setColour(OUColour.BLACK); //for testing we can make the jet visible
 
-r.moveRocketBy(349);
+r.pulse1();
+r.pulse2();
+r.pulse3();
 
 r.ignition();
 
-r.animateRocket(10);
 
-r.launch();
+r.animateRocket(10);

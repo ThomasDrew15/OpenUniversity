@@ -74,7 +74,7 @@ public class Dog extends Pet
                 break;
             }
         }
-        System.out.println("Hungry doggo is am unhappy doggo");
+        System.out.println("Hungry doggo is an unhappy doggo");
     }
 
     public boolean sleep()
