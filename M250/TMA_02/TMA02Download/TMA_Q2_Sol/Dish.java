@@ -31,10 +31,10 @@ public class Dish
      * Constructor for objects of class Dish
      * allowing specification of all the required attributes.
      */
-    public Dish(String aStyle, String aYear, int aValue, Chef theChef)
+    public Dish(String aStyle, String aDate, int aValue, Chef theChef)
     {
         this.style = aStyle;
-        this.dateLastMade = aYear;
+        this.dateLastMade = aDate;
         this.rating = aValue;
         this.chef = theChef;
     }
@@ -113,9 +113,9 @@ public class Dish
     /**
      * Setter for a Dish's year painted.
      */
-    public void setDateLastMade(String aYear)
+    public void setDateLastMade(String aDate)
     {
-        this.dateLastMade = aYear;
+        this.dateLastMade = aDate;
     }
 
     /**
