@@ -1,7 +1,7 @@
 
 /**
  *
- * Objects of the Dish class model real-world Dishs that have attributes
+ * Objects of the Dish class model real-world Dishes that have attributes
  * representing style, year painted, insured value and whether or not an alarm 
  * is required.
  *
@@ -46,7 +46,7 @@ public class Dish
      * a Dish object. In this case we chose to make
      * the Chef object 'empty'. 
      */
-    public Dish(String astyle)
+    public Dish(String aStyle)
     {
         this.style = aStyle;
         this.dateLastMade = null; //null indicates an unknown date
@@ -81,17 +81,17 @@ public class Dish
     {
        //this message needs to be forwarded to the component Chef object
        //but the Chef object might not exist yet, so we could check
-       if(this.Chef == null) //Has the Chef component been created?
+       if(this.chef == null) //Has the Chef component been created?
        {
            //No, so we need to create a new Chef object and make
            //the instance variable of the composite object to reference it
-           this.Chef = new Chef(aName);
+           this.chef = new Chef(aName);
        }
        else
        {
            //We already have an Chef object, so we just need to set
            //its name by 'forwarding' the message to the Chef component
-           this.Chef.setName(aName);
+           this.chef.setName(aName);
        }
     }
 
@@ -113,7 +113,7 @@ public class Dish
     /**
      * Setter for a Dish's year painted.
      */
-    public void setdateLastMade(String aYear)
+    public void setDateLastMade(String aYear)
     {
         this.dateLastMade = aYear;
     }
@@ -121,7 +121,7 @@ public class Dish
     /**
      * Getter for a Dish's style.
      */
-    public String getstyle()
+    public String getStyle()
     {
         return this.style;
     }
@@ -129,7 +129,7 @@ public class Dish
     /**
      * Getter for a Dish's insured value.
      */
-    public int getrating()
+    public int getRating()
     {
         return this.rating;
     }
@@ -143,7 +143,7 @@ public class Dish
      */
     public boolean isRecentlyUsed()
     {
-        return this.getrating() >= 1000;
+        return this.getRating() >= 1000;
     }
 
     /**
@@ -172,7 +172,7 @@ public class Dish
     {
         //The Chef's name is part of the component Chef object. 
         //Does the component object exist?
-        if (this.Chef == null || this.Chef.getName() == null)
+        if (this.chef == null || this.chef.getName() == null)
         {
             //no Chef or no Chef name was set up
             return " Unattributed";
@@ -180,7 +180,7 @@ public class Dish
 
         //The Chef component has been set up, 
         //so we can forward this message to the component object 
-        return this.Chef.getName();
+        return this.chef.getName();
     }
 
     /**
@@ -188,7 +188,7 @@ public class Dish
      * 1780, and otherwise returns false.
      */public boolean WellPracticed()
     {
-        return(Integer.parseInt(this.Chef.getyearOfQualification()) < 1780);
+        return(Integer.parseInt(this.chef.getYearOfQualification()) < 1780);
     }
 
     /**
@@ -196,7 +196,7 @@ public class Dish
      */
     public String toString()
     {
-        return "style: " + this.style + ", Chef: " + this.Chef + ", Insured for: " + this.getRating() + ".";
+        return "style: " + this.style + ", Chef: " + this.chef + ", Insured for: " + this.getRating() + ".";
     }
 
 }
