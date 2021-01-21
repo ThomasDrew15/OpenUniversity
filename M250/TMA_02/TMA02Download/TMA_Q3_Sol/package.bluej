@@ -1,8 +1,8 @@
 #BlueJ package file
 package.editor.height=388
 package.editor.width=670
-package.editor.x=1970
-package.editor.y=357
+package.editor.x=650
+package.editor.y=351
 package.numDependencies=0
 package.numTargets=4
 package.showExtends=true
@@ -10,7 +10,7 @@ package.showUses=true
 project.charset=UTF-8
 readme.editor.height=700
 readme.editor.width=900
-readme.editor.x=1459
+readme.editor.x=540
 readme.editor.y=46
 target1.height=50
 target1.name=PondFish
