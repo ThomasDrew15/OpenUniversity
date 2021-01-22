@@ -158,7 +158,8 @@ public class Dish
      */
     public boolean isRecentlyUsed()
     {
-        return this.getDateLastMade() >= "31082020";
+        int dateConversion = Integer.parseInt(dateLastMade);
+        return dateConversion() >= 31082020;
     }
 
     /**
