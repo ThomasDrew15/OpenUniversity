@@ -127,7 +127,7 @@ public class Dish
     }
 
     /**
-     * Getter for a Dish's insured value.
+     * Getter for a Dish's rating value.
      */
     public int getRating()
     {
@@ -135,23 +135,11 @@ public class Dish
     }
 
     /**
-     * Getter for a Dish's alarm requirement.
-     * This method displays state-dependent behaviour:
-     * The value returned depends on part of the state of the receiver.
-     * If the receiver's rating is greater than or equal to 1000 true is returned.
-     * Otherwise false is returned
-     */
-    public boolean isRecentlyUsed()
-    {
-        return this.getRating() >= 1000;
-    }
-
-    /**
-     * Getter for a Dish's year painted.
-     * This method returns "Unknown" if the year
+     * Getter for a Dish's date last made.
+     * This method returns "Unknown" if the date
      * is not known (i.e. it has not been set).
      */
-    public String getdateLastMade()
+    public String getDateLastMade()
     {
         if (this.dateLastMade == null)
         {
@@ -159,6 +147,18 @@ public class Dish
         }
 
         return this.dateLastMade;
+    }
+
+    /**
+     * Getter for if the Dish was recently used.
+     * This method displays state-dependent behaviour:
+     * The value returned depends on part of the state of the receiver.
+     * If the receiver's rating is greater than or equal to 31082020 true is returned.
+     * Otherwise false is returned
+     */
+    public boolean isRecentlyUsed()
+    {
+        return this.getDateLastMade() >= "31082020";
     }
 
     /**
@@ -188,7 +188,7 @@ public class Dish
      * 1780, and otherwise returns false.
      */public boolean WellPracticed()
     {
-        return(Integer.parseInt(this.chef.getYearOfQualification()) < 1780);
+        return(Integer.parseInt(this.chef.getYearOfQualification()) < 1995);
     }
 
     /**
@@ -196,7 +196,7 @@ public class Dish
      */
     public String toString()
     {
-        return "style: " + this.style + ", Chef: " + this.chef + ", Insured for: " + this.getRating() + ".";
+        return "style: " + this.style + ", chef: " + this.chef + ", rating: " + this.getRating() + ".";
     }
 
 }
