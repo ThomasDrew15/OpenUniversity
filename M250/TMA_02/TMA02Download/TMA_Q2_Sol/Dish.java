@@ -156,10 +156,9 @@ public class Dish
      * If the receiver's rating is greater than or equal to 31082020 true is returned.
      * Otherwise false is returned
      */
-    public boolean isRecentlyUsed()
+    public boolean isWellLiked()
     {
-        int dateConversion = Integer.parseInt(dateLastMade);
-        return dateConversion() >= 31082020;
+        return this.getRating() >= 7;
     }
 
     /**
