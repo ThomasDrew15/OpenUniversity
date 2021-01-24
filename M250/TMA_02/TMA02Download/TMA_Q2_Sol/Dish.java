@@ -15,6 +15,7 @@
  * of state-dependent behaviour.
  * alarmRequired is not represented by an instance variable.
  *
+ * TMA02 Q2
  * @author Tom Drew
  * @version 1.0 21/01/2021
  */
@@ -186,7 +187,7 @@ public class Dish
     /**
      * This method returns true if the Chef qualified in or before
      * 1995, and otherwise returns false.
-     */public boolean WellPracticed()
+     */public boolean isWellPracticed()
     {
         return(Integer.parseInt(this.chef.getYearOfQualification()) < 1995);
     }
@@ -196,7 +197,7 @@ public class Dish
      */
     public String toString()
     {
-        return "style: " + this.style + ", chef: " + this.chef + ", rating: " + this.getRating() + ".";
+        return "style: " + this.style + ", last made: " + this.dateLastMade + ", chef: " + this.chef + ", rating: " + this.getRating() + ".";
     }
 
 }
