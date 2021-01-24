@@ -31,11 +31,11 @@ public class Dish
      * Constructor for objects of class Dish
      * allowing specification of all the required attributes.
      */
-    public Dish(String aStyle, String aDate, int aValue, Chef theChef)
+    public Dish(String aStyle, String aLastMadeDate, int aRating, Chef theChef)
     {
         this.style = aStyle;
-        this.dateLastMade = aDate;
-        this.rating = aValue;
+        this.dateLastMade = aLastMadeDateLM;
+        this.rating = aRating;
         this.chef = theChef;
     }
 
@@ -105,17 +105,17 @@ public class Dish
     /**
      * Setter for a Dish's insured value.
      */
-    public void setrating(int aValue)
+    public void setrating(int aRating)
     {
-        this.rating = aValue;
+        this.rating = aRating;
     }
 
     /**
      * Setter for a Dish's year painted.
      */
-    public void setDateLastMade(String aDate)
+    public void setDateLastMade(String aLastMadeDate)
     {
-        this.dateLastMade = aDate;
+        this.dateLastMade = aLastMadeDate;
     }
 
     /**
@@ -184,8 +184,8 @@ public class Dish
     }
 
     /**
-     * This method returns true if the Chef was born in or before
-     * 1780, and otherwise returns false.
+     * This method returns true if the Chef qualified in or before
+     * 1995, and otherwise returns false.
      */public boolean WellPracticed()
     {
         return(Integer.parseInt(this.chef.getYearOfQualification()) < 1995);
