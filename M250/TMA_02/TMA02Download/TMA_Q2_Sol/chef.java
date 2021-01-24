@@ -36,10 +36,10 @@ public class Chef
      * A constructor for objects of class Chef
      * if we know their name and their year of qualification.
      */
-    public Chef(String aName, String aYear)
+    public Chef(String aName, String aQualificationYear)
     {
         this.name = aName;
-        this.yearOfQualification = aYear;
+        this.yearOfQualification = aQualificationYear;
     }
 
     /**
@@ -53,9 +53,9 @@ public class Chef
     /**
      * Setter for a chef's year of qualification.
      */
-    public void setYearOfQualification(String aYear)
+    public void setYearOfQualification(String aQualificationYear)
     {
-        this.yearOfQualification = aYear;
+        this.yearOfQualification = aQualificationYear;
     }
 
     /**

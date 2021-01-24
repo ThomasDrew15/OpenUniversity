@@ -34,7 +34,7 @@ public class Dish
     public Dish(String aStyle, String aLastMadeDate, int aRating, Chef theChef)
     {
         this.style = aStyle;
-        this.dateLastMade = aLastMadeDateLM;
+        this.dateLastMade = aLastMadeDate;
         this.rating = aRating;
         this.chef = theChef;
     }
