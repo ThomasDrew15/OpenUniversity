@@ -40,7 +40,7 @@ public class Rocket
       this.jet.setDiameter(10);           
 
       //sets the jet position relative to the body, using the helper methods
-      this.jet.setXPos(body.getXPos()+body.getLength());
+      this.jet.setXPos(body.getXPos()+body.getLength()/2);
       this.jet.setYPos(getJetYPos()); 
    }
 
@@ -63,7 +63,7 @@ public class Rocket
    {
       //gets position of jet on the X axis
 
-      return (nose.getXPos()+5);
+      return set.jetXPos(body.getXPos()+body.getLength()/2);
    }
 
    private int getJetYPos()

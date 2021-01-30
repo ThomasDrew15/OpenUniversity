@@ -10,4 +10,6 @@ r.pulse1();
 r.pulse2();
 r.pulse3();
 
-r.ignition();
+r.moveRocketBy(100);
+
+r.setJetXPos();
