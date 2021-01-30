@@ -40,7 +40,7 @@ public class Rocket
       this.jet.setDiameter(10);           
 
       //sets the jet position relative to the body, using the helper methods
-      this.jet.setXPos(getJetXPos()); 
+      this.jet.setXPos(body.getXPos()+body.getLength());
       this.jet.setYPos(getJetYPos()); 
    }
 
@@ -97,7 +97,7 @@ public class Rocket
       //to be written in Q1(c)(i)
       this.jet.setColour(OUColour.RED);
       this.jet.setDiameter(6);
-      this.jet.setXPos(getJetXPos());
+      this.jet.getXPos();
       this.delay(500);
    }
 
