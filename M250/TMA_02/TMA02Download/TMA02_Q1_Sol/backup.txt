@@ -12,4 +12,10 @@ r.pulse3();
 
 r.moveRocketBy(100);
 
-r.setJetXPos();
+r.jet.setXPos(getJetXPos());
+
+r.animateRocket(10);
+
+r.launch();
+
+r.system.out.print(body.getLength());

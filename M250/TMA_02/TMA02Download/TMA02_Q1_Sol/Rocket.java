@@ -40,7 +40,7 @@ public class Rocket
       this.jet.setDiameter(10);           
 
       //sets the jet position relative to the body, using the helper methods
-      this.jet.setXPos(body.getXPos()+body.getLength()/2);
+      this.jet.setXPos(getJetXPos());
       this.jet.setYPos(getJetYPos()); 
    }
 
@@ -48,29 +48,28 @@ public class Rocket
    {
      //gets position of body on the X axis
      
-          
-     return nose.getXPos();
+     return body.getXPos();
    }
 
    private int getBodyYPos()
    {
      //gets position of body on the Y axis
      
-     return (nose.getYPos()+20);
+     return body.getYPos();
    }
    
    private int getJetXPos()
    {
       //gets position of jet on the X axis
 
-      return set.jetXPos(body.getXPos()+body.getLength()/2);
+      return 0;
    }
 
    private int getJetYPos()
    {
      //gets position of jet on the Y axis
      
-     return body.getYPos() + body.getLength();
+     return jet.getYPos();
    }
 
    /**
@@ -97,7 +96,7 @@ public class Rocket
       //to be written in Q1(c)(i)
       this.jet.setColour(OUColour.RED);
       this.jet.setDiameter(6);
-      this.jet.getXPos();
+      this.jet.setXPos(getJetXPos());
       this.delay(500);
    }
 
@@ -154,7 +153,7 @@ public class Rocket
       //for(init;condition;incr/decr)
       for(int i=0;i<=100;i++)
       {
-         int action = i%4;
+         int action = i%25;
          System.out.println(i);
          if (action == 1)
          {
