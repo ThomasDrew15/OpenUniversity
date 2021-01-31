@@ -6,16 +6,11 @@ Rocket r = new Rocket(t, s, c);
 
 c.setColour(OUColour.BLACK);
 
-r.pulse1();
-r.pulse2();
-r.pulse3();
 
 r.moveRocketBy(100);
 
-r.jet.setXPos(getJetXPos());
-
-r.animateRocket(10);
+r.animateRocket(11);
 
 r.launch();
 
-r.system.out.print(body.getLength());
+r.remixToIgnition();

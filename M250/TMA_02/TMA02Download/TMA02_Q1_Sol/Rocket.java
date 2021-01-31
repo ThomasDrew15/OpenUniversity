@@ -48,28 +48,28 @@ public class Rocket
    {
      //gets position of body on the X axis
      
-     return body.getXPos();
+     return nose.getXPos();
    }
 
    private int getBodyYPos()
    {
      //gets position of body on the Y axis
      
-     return body.getYPos();
+     return (nose.getYPos() + nose.getHeight());
    }
    
    private int getJetXPos()
    {
       //gets position of jet on the X axis
 
-      return 0;
+      return (body.getXPos() + (body.getLength() /2 - jet.getDiameter() /2) );
    }
 
    private int getJetYPos()
    {
      //gets position of jet on the Y axis
      
-     return jet.getYPos();
+     return (body.getYPos() + body.getLength());
    }
 
    /**
@@ -143,6 +143,23 @@ public class Rocket
    }
 
    /**
+    * Fresh and hot out the kitchen
+    */
+   public void remixToIgnition()
+   {
+      {
+         pulse2();
+         pulse1();
+         pulse3();
+         pulse1();
+         pulse3();
+         pulse2();
+         pulse1();
+         pulse3();
+      }
+   }
+   
+   /**
     * Moves the entire rocket in a loop repeated 
     * 100 times, animating the jet as it goes, so the rocket
     * moves upwards by speed units every 4th iteration
@@ -153,7 +170,7 @@ public class Rocket
       //for(init;condition;incr/decr)
       for(int i=0;i<=100;i++)
       {
-         int action = i%25;
+         int action = i%4;
          System.out.println(i);
          if (action == 1)
          {
@@ -199,7 +216,7 @@ public class Rocket
       inputNumber = Integer.parseInt(inputString);
       System.out.println(inputNumber);
 
-      if (inputNumber >= 349)
+      if (inputNumber >= 12)
       {
          OUDialog.alert("Select a lower number or the rocket will disappear");
       }
