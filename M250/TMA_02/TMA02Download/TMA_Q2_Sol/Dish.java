@@ -74,7 +74,7 @@ public class Dish
     /**
      * Setter for a Dish's Chef's name.
      *This method first checks to see if there
-     *is an Chef component that can be sent a message. If there isn't
+     *is a Chef component that can be sent a message. If there isn't
      *one, it creates one.
      */
 
@@ -90,7 +90,7 @@ public class Dish
        }
        else
        {
-           //We already have an Chef object, so we just need to set
+           //We already have a Chef object, so we just need to set
            //its name by 'forwarding' the message to the Chef component
            this.chef.setName(aName);
        }
