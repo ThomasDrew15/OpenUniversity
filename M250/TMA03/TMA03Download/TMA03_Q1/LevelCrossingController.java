@@ -77,6 +77,16 @@ public class LevelCrossingController
           System.out.println(e);
        } 
     }
+
+    /**
+     * This method should set the colour of the specified light to the specified colour if it is one of OUColour.RED,
+     * OUColour.GREEN, OUColour.ORANGE or OUColour.BLACK. Otherwise the colour should be unchanged.
+     */
+    public static void colourLight(Light, OUColour)
+    {
+        Light.Light();
+    }
+
 }
 
 
