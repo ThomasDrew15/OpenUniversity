@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Artist()
+comment0.text=\n\ zero-argument\ constructor\:\ if\ we\ don\u2019t\ know\ the\ artist\u2019s\ attributes.\ \ \ \ \n
+comment1.params=aName
+comment1.target=Artist(java.lang.String)
+comment1.text=\n\ A\ constructor\ for\ objects\ of\ class\ Artist\ if\ we\ know\ their\ name\n\ but\ not\ their\ year\ of\ birth.\n
+comment2.params=aName\ aYear
+comment2.target=Artist(java.lang.String,\ java.lang.String)
+comment2.text=\n\ A\ constructor\ for\ objects\ of\ class\ Artist\n\ if\ we\ know\ their\ name\ and\ their\ year\ of\ birth.\n
+comment3.params=aName
+comment3.target=void\ setName(java.lang.String)
+comment3.text=\n\ Setter\ for\ an\ artist's\ name.\n
+comment4.params=aYear
+comment4.target=void\ setYearOfBirth(java.lang.String)
+comment4.text=\n\ Setter\ for\ an\ artist's\ year\ of\ birth.\n
+comment5.params=
+comment5.target=java.lang.String\ getName()
+comment5.text=\n\ Getter\ for\ an\ artist's\ name.\ It\ could\n\ return\ a\ string\ such\ as\ "unattributed"\ \n\ if\ the\ artist's\ name\ is\ not\ known,\ \n\ but\ we\ have\ chosen\ to\ keep\ it\ simple\ here.\n
+comment6.params=
+comment6.target=java.lang.String\ getYearOfBirth()
+comment6.text=\n\ Getter\ for\ an\ artist's\ year\ of\ birth.\ \n\ Keeping\ it\ simple,\ as\ in\ getName().\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\n\ Returns\ a\ description\ of\ this\ object\ as\ a\ string.\n
+numComments=8

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ getHappiness()
+comment1.params=
+comment1.target=int\ getEnergyLevel()
+comment2.params=aName\ aDescription
+comment2.target=Dog(java.lang.String,\ java.lang.String)
+comment3.params=
+comment3.target=int\ decrementHappiness()
+comment4.params=
+comment4.target=int\ incrementHappiness()
+comment5.params=
+comment5.target=int\ decrementEnergyLevel()
+comment6.params=
+comment6.target=int\ incrementEnergyLevel()
+comment7.params=
+comment7.target=void\ walkies()
+comment8.params=
+comment8.target=boolean\ sleep()
+comment9.params=
+comment9.target=void\ noWalkies()
+numComments=10

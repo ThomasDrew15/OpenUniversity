@@ -1,0 +1,5 @@
+Dog d = new Dog("Herbie", "Black retriever");
+
+d.incrementEnergyLevel();
+
+d.walkies();

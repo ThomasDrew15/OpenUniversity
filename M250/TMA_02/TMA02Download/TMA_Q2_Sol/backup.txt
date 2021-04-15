@@ -1,0 +1,7 @@
+Chef chefRamsey = new Chef("Gordon", "1994");
+Dish LambSauce = new Dish("English", "31082020", 8, chefRamsey);
+LambSauce.isWellPracticed();
+
+chefRamsey.setYearOfQualification("2013");
+
+LambSauce.toString();

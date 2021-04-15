@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Chef()
+comment0.text=\n\ zero-argument\ constructor\:\ if\ we\ don\u2019t\ know\ the\ chef\u2019s\ attributes.\n
+comment1.params=aName
+comment1.target=Chef(java.lang.String)
+comment1.text=\n\ A\ constructor\ for\ objects\ of\ class\ Chef\ if\ we\ know\ their\ name\n\ but\ not\ their\ year\ of\ qualification.\n
+comment2.params=aName\ aQualificationYear
+comment2.target=Chef(java.lang.String,\ java.lang.String)
+comment2.text=\n\ A\ constructor\ for\ objects\ of\ class\ Chef\n\ if\ we\ know\ their\ name\ and\ their\ year\ of\ qualification.\n
+comment3.params=aName
+comment3.target=void\ setName(java.lang.String)
+comment3.text=\n\ Setter\ for\ a\ chef's\ name.\n
+comment4.params=aQualificationYear
+comment4.target=void\ setYearOfQualification(java.lang.String)
+comment4.text=\n\ Setter\ for\ a\ chef's\ year\ of\ qualification.\n
+comment5.params=
+comment5.target=java.lang.String\ getName()
+comment5.text=\n\ Getter\ for\ a\ chef's\ name.\ It\ could\n\ return\ a\ string\ such\ as\ "unattributed"\n\ if\ the\ chef's\ name\ is\ not\ known.\n
+comment6.params=
+comment6.target=java.lang.String\ getYearOfQualification()
+comment6.text=\n\ Getter\ for\ a\ chef's\ year\ of\ qualification.\n\ Similar\ to\ getName().\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\n\ Returns\ a\ description\ of\ this\ object\ as\ a\ string.\n
+numComments=8
