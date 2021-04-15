@@ -36,41 +36,40 @@ public class Rocket
       //The jet is invisible to begin with, because it uses
       //the background colour of WHITE, but you can use BLACK
       //to help you see it while testing
-      this.jet.setColour(OUColour.BLACK); 
+      this.jet.setColour(OUColour.WHITE); 
       this.jet.setDiameter(10);           
 
       //sets the jet position relative to the body, using the helper methods
-      this.jet.setXPos(getJetXPos()); 
+      this.jet.setXPos(getJetXPos());
       this.jet.setYPos(getJetYPos()); 
    }
 
    private int getBodyXPos()
    {
-     //to be written in Q1(a)(i)
+     //gets position of body on the X axis
      
-          
-     return 0;
+     return nose.getXPos();
    }
 
    private int getBodyYPos()
    {
-     //to be written in Q1(a)(ii)
+     //gets position of body on the Y axis
      
-     return 0;
+     return (nose.getYPos() + nose.getHeight());
    }
    
    private int getJetXPos()
    {
-      //to be written in Q1(a)(iii)
-      
-      return 0;
+      //gets position of jet on the X axis
+
+      return (body.getXPos() + (body.getLength() /2 - jet.getDiameter() /2) );
    }
 
    private int getJetYPos()
    {
-     //to be written in Q1(a)(iv)
+     //gets position of jet on the Y axis
      
-     return 0;
+     return (body.getYPos() + body.getLength());
    }
 
    /**
@@ -81,8 +80,10 @@ public class Rocket
     */
    public void moveRocketBy(int anInt)
    {
-      //to be written in Q1(b)
-     
+      //move the rocket upwards by the amount given by the method's argument
+      this.nose.setYPos(nose.getYPos()-anInt);
+      this.body.setYPos(getBodyYPos());
+      this.jet.setYPos(getJetYPos());
    }
 
    /**
@@ -93,7 +94,10 @@ public class Rocket
    public void pulse1()
    {
       //to be written in Q1(c)(i)
-   
+      this.jet.setColour(OUColour.RED);
+      this.jet.setDiameter(6);
+      this.jet.setXPos(getJetXPos());
+      this.delay(500);
    }
 
    /**
@@ -104,7 +108,10 @@ public class Rocket
    public void pulse2()
    {
       //to be written in Q1(c)(ii)
-    
+      this.jet.setColour(OUColour.ORANGE);
+      this.jet.setDiameter(12);
+      this.jet.setXPos(getJetXPos());
+      this.delay(500);
    }
 
    /**
@@ -115,7 +122,10 @@ public class Rocket
    public void pulse3()
    {
       //to be written in Q1(c)(iii)
-      
+      this.jet.setColour(OUColour.RED);
+      this.jet.setDiameter(24);
+      this.jet.setXPos(getJetXPos());
+      this.delay(500);
    }
 
    /**
@@ -124,9 +134,31 @@ public class Rocket
    public void ignition()
    {
       //to be written in Q1(d)
-    
+
+      {
+         pulse1();
+         pulse2();
+         pulse3();
+      }
    }
 
+   /**
+    * Fresh and hot out the kitchen
+    */
+   public void remixToIgnition()
+   {
+      {
+         pulse2();
+         pulse1();
+         pulse3();
+         pulse1();
+         pulse3();
+         pulse2();
+         pulse1();
+         pulse3();
+      }
+   }
+   
    /**
     * Moves the entire rocket in a loop repeated 
     * 100 times, animating the jet as it goes, so the rocket
@@ -135,7 +167,34 @@ public class Rocket
    public void animateRocket(int speed)
    {
       //to be written in Q1(e)
-      
+      //for(init;condition;incr/decr)
+      for(int i=0;i<=100;i++)
+      {
+         int action = i%4;
+         System.out.println(i);
+         if (action == 1)
+         {
+            pulse1();
+            System.out.println("pulse 1");
+         }
+         else if (action == 2)
+         {
+            pulse2();
+            System.out.println("pulse 2");
+         }
+         else if (action == 3)
+         {
+            pulse3();
+            System.out.println("pulse 3");
+         }
+         else
+         {
+            moveRocketBy(speed);
+            System.out.println("moveRocket");
+         }
+      }
+
+
    }
 
    /**
@@ -150,7 +209,23 @@ public class Rocket
     */
    public void launch()
    {
-      //to be written in Q1(f) 
+      //to be written in Q1(f)
+      int inputNumber;
+      String inputString;
+      inputString = OUDialog.request("Please enter a number");
+      inputNumber = Integer.parseInt(inputString);
+      System.out.println(inputNumber);
+
+      if (inputNumber >= 12)
+      {
+         OUDialog.alert("Select a lower number or the rocket will disappear");
+      }
+      else
+      {
+         OUDialog.alert("Click to continue");
+         ignition();
+         animateRocket(inputNumber);
+      }
      
    }
 
