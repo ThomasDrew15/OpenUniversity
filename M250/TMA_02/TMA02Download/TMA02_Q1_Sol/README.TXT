@@ -27,3 +27,8 @@ r.animateRocket(10);
 //Q1(f)
 Rocket r = new Rocket(t, s, c);
 r.launch();
+
+
+
+Square.getLength
+
