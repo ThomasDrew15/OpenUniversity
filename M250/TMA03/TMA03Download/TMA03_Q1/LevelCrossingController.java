@@ -77,15 +77,27 @@ public class LevelCrossingController
           System.out.println(e);
        } 
     }
+  
 
-    /**
-     * This method should set the colour of the specified light to the specified colour if it is one of OUColour.RED,
-     * OUColour.GREEN, OUColour.ORANGE or OUColour.BLACK. Otherwise the colour should be unchanged.
-     */
-    public static void colourLight(Light, OUColour)
+    public void colourLight(Light myLight, OUColour colourColour)
     {
-        Light.Light();
+       myLight.setColour(colourColour);
     }
+       
+   
+   
+   /**
+    * Q1bi. State dictates which lights are on and correspond to differing 'Train Coming' actions
+    */
+    private int State;
+    
+    /**
+    * Qbii. Constructor for lights 
+    */
+   
+   /**
+    * public setsLights()
+    */
 
 }
 
