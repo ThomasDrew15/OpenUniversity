@@ -97,10 +97,20 @@ public class LevelCrossingController
     /**
     * Qbii. Constructor for lights 
     */
-   
-   /**
-    * public setsLights()
-    */
+
+    public LevelCrossingController(String lightOne, String lightTwo, String lightThree)
+    {
+        this.topLeft = lightOne;
+        this.topRight = lightTwo;
+        this.bottom = lightThree;
+
+        setPositions();
+
+        State = 0;
+
+        setTrainComing(false);
+
+    }
 
 }
 
