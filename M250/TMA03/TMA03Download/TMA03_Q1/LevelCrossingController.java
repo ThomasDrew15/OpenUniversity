@@ -82,9 +82,9 @@ public class LevelCrossingController
      * This method should set the colour of the specified light to the specified colour if it is one of OUColour.RED, OUColour.GREEN, OUColour.ORANGE or OUColour.BLACK. 
      * Otherwise the colour should be unchanged. 
      */
-    public void colourLight(Light myLight, OUColour colourColour)
+    public void colourLight(Light myLight, OUColour colour)
     {
-       myLight.setColour(colourColour);
+       myLight.setColour(colour);
     }
        
    
@@ -98,11 +98,11 @@ public class LevelCrossingController
     * Qbii. Constructor for lights 
     */
 
-    public LevelCrossingController(String lightOne, String lightTwo, String lightThree)
+    /**public LevelCrossingController(Light lightOne, String lightTwo, String lightThree)
     {
-        this.topLeft = lightOne;
-        this.topRight = lightTwo;
-        this.bottom = lightThree;
+        lightOne = topLeft;
+        lightTwo = topRight;
+        lightThree = bottom;
 
         setPositions();
 
@@ -111,6 +111,40 @@ public class LevelCrossingController
         setTrainComing(false);
 
     }
+    
+   */
+
+    public void changeState()
+    {
+        this.State = 0;
+
+        while (trainComing = true)
+            if (this.State <= 2);
+            this.State ++;
+
+            if (this.State == 3);
+            this.State = this.State - 1;
+
+
+    }
+
+    public void colourAllLights()
+    {
+
+        if (State == 0);
+        do some work to set the lights:
+
+        if (State == 1);
+        as above;
+
+        if (State == 2);
+        as above;
+
+        if (State == 3);
+        as above;
+
+    }
+
 
 }
 
