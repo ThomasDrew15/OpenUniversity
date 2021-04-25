@@ -99,9 +99,10 @@ public class LevelCrossingController
      */
 
 
-     public void LevelCrossingController(Light lightOne, String lightTwo, String lightThree)
+     public void LevelCrossingController(Light lightOne, Light lightTwo, Light lightThree)
      {
          this.topLeft = lightOne;
+         this.topRight = lightTwo;
          this.topRight = lightTwo;
          this.bottom = lightThree;
 
