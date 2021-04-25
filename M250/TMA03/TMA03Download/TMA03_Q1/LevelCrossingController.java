@@ -93,26 +93,31 @@ public class LevelCrossingController
     * Q1bi. State dictates which lights are on and correspond to differing 'Train Coming' actions
     */
     private int State;
-    
+
     /**
-    * Qbii. Constructor for lights 
-    */
+     *  Qbii. Constructor for lights
+     */
 
-    /**public LevelCrossingController(Light lightOne, String lightTwo, String lightThree)
-    {
-        lightOne = topLeft;
-        lightTwo = topRight;
-        lightThree = bottom;
 
-        setPositions();
+     public void LevelCrossingController(Light lightOne, String lightTwo, String lightThree)
+     {
+         this.topLeft = lightOne;
+         this.topRight = lightTwo;
+         this.bottom = lightThree;
 
-        State = 0;
+         setPositions();
 
-        setTrainComing(false);
+         State = 0;
 
-    }
-    
-   */
+         setTrainComing(false);
+
+     }
+
+
+
+     /**
+     * Qci
+     */
 
     public void changeState()
     {
@@ -132,16 +137,24 @@ public class LevelCrossingController
     {
 
         if (State == 0);
-        do some work to set the lights:
+        colourLight(bottom, OUColour.BLACK);
+        colourLight(topLeft, OUColour.BLACK);
+        colourLight(topRight, OUColour.BLACK);
 
         if (State == 1);
-        as above;
+        colourLight(bottom, OUColour.ORANGE);
+        colourLight(topLeft, OUColour.BLACK);
+        colourLight(topRight, OUColour.BLACK);
 
         if (State == 2);
-        as above;
+        colourLight(bottom, OUColour.BLACK);
+        colourLight(topLeft, OUColour.RED);
+        colourLight(topRight, OUColour.BLACK);
 
         if (State == 3);
-        as above;
+        colourLight(bottom, OUColour.BLACK);
+        colourLight(topLeft, OUColour.BLACK);
+        colourLight(topRight, OUColour.RED);
 
     }
 
