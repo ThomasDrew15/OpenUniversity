@@ -79,7 +79,7 @@ public class LevelCrossingController
     }
     
     /**
-     * This method should set the colour of the specified light to the specified colour if it is one of OUColour.RED, OUColour.GREEN, OUColour.ORANGE or OUColour.BLACK. 
+     * Qa This method should set the colour of the specified light to the specified colour if it is one of OUColour.RED, OUColour.GREEN, OUColour.ORANGE or OUColour.BLACK.
      * Otherwise the colour should be unchanged. 
      */
     public void colourLight(Light myLight, OUColour colour)
@@ -99,10 +99,9 @@ public class LevelCrossingController
      */
 
 
-     public void LevelCrossingController(Light lightOne, Light lightTwo, Light lightThree)
+     public LevelCrossingController(Light lightOne, Light lightTwo, Light lightThree)
      {
          this.topLeft = lightOne;
-         this.topRight = lightTwo;
          this.topRight = lightTwo;
          this.bottom = lightThree;
 
@@ -111,6 +110,11 @@ public class LevelCrossingController
          State = 0;
 
          setTrainComing(false);
+
+         /**
+          * Q1ciii
+           */
+         colourAllLights();
 
      }
 
@@ -133,6 +137,10 @@ public class LevelCrossingController
 
 
     }
+
+    /**
+     * Q1cii
+     */
 
     public void colourAllLights()
     {
@@ -158,6 +166,9 @@ public class LevelCrossingController
         colourLight(topRight, OUColour.RED);
 
     }
+
+
+
 
 
 }
