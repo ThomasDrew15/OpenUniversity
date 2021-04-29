@@ -99,7 +99,7 @@ public class LevelCrossingController
      */
 
 
-     public LevelCrossingController(Light lightOne, Light lightTwo, Light lightThree)
+     public void lightConstructor(Light, Light, Light)
      {
          this.topLeft = lightOne;
          this.topRight = lightTwo;
@@ -110,11 +110,6 @@ public class LevelCrossingController
          State = 0;
 
          setTrainComing(false);
-
-         /**
-          * Q1ciii
-           */
-         colourAllLights();
 
      }
 
@@ -137,10 +132,6 @@ public class LevelCrossingController
 
 
     }
-
-    /**
-     * Q1cii
-     */
 
     public void colourAllLights()
     {
@@ -166,9 +157,6 @@ public class LevelCrossingController
         colourLight(topRight, OUColour.RED);
 
     }
-
-
-
 
 
 }
