@@ -58,7 +58,14 @@ public class LevelCrossingController
 
         if (timesAsString != null)
         {
-           repeats = Integer.parseInt(timesAsString);
+            try
+            {
+                repeats = Integer.parseInt(timesAsString);
+            }
+            catch (Exception e)
+            {
+                System.out.println(e);
+            }
         }
        return repeats;
     }
@@ -98,7 +105,6 @@ public class LevelCrossingController
      *  Qbii. Constructor for lights
      */
 
-
      public LevelCrossingController(Light lightOne, Light lightTwo, Light lightThree)
      {
          this.topLeft = lightOne;
@@ -112,8 +118,6 @@ public class LevelCrossingController
          setTrainComing(false);
 
      }
-
-
 
      /**
      * Qci
