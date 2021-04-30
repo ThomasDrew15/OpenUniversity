@@ -64,7 +64,7 @@ public class LevelCrossingController
             }
             catch (Exception e)
             {
-                System.out.println(e);
+                System.out.println(e + " Please enter an integer");
             }
         }
        return repeats;
