@@ -50,16 +50,16 @@ public class LevelCrossingController
     public static int findNumRepeats()
     {
        int repeats = 0;
-//        String timesAsString =              
-//          OUDialog.request("How many times should the red lights"
-//          + " flash? ("
-//          + LevelCrossingController.MIN_REPEATS
-//          + " or over times)");
-//                 
-//        if (timesAsString != null)
-//        {
-//           repeats = Integer.parseInt(timesAsString);
-//        }
+        String timesAsString =
+          OUDialog.request("How many times should the red lights"
+          + " flash? ("
+          + LevelCrossingController.MIN_REPEATS
+          + " or over times)");
+
+        if (timesAsString != null)
+        {
+           repeats = Integer.parseInt(timesAsString);
+        }
        return repeats;
     }
     
@@ -99,7 +99,7 @@ public class LevelCrossingController
      */
 
 
-     public void lightConstructor(Light, Light, Light)
+     public void LevelCrossingController(Light lightOne, Light lightTwo, Light lightThree)
      {
          this.topLeft = lightOne;
          this.topRight = lightTwo;
@@ -157,6 +157,17 @@ public class LevelCrossingController
         colourLight(topRight, OUColour.RED);
 
     }
+
+    /**
+     * Q1di
+     */
+    public final int MIN_REPEATS;
+    {
+        MIN_REPEATS = 4;
+    }
+
+
+
 
 
 }
