@@ -99,7 +99,7 @@ public class LevelCrossingController
      */
 
 
-     public void LevelCrossingController(Light lightOne, Light lightTwo, Light lightThree)
+     public LevelCrossingController(Light lightOne, Light lightTwo, Light lightThree)
      {
          this.topLeft = lightOne;
          this.topRight = lightTwo;
@@ -157,19 +157,11 @@ public class LevelCrossingController
         colourLight(topRight, OUColour.RED);
 
     }
-
-    /**
-     * Q1di
-     */
-    public final int MIN_REPEATS;
-    {
-        MIN_REPEATS = 4;
-    }
-
-
-
-
-
+   /**
+   * Q1di
+   */
+   public static final int MIN_REPEATS = 4;
 }
+
 
 
