@@ -211,11 +211,15 @@ public class LevelCrossingController
         System.out.println("Barrier Lowered");
         findNumRepeats();
         delay(2000);
-        for (int i = 0; i < repeats ; i++)
-        {
-            System.out.println(i);
-        }
-
+        /**
+         * for (int i = 0; i < repeats ; i++)
+         * for amount of times repeats is specified, change state to 2, then 3
+         * {
+         *  }
+         */
+        delay(2000);
+        setTrainComing(false);
+        System.out.println("Barrier raised");
     }
 }
 
