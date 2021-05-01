@@ -166,25 +166,33 @@ public class LevelCrossingController
     public void colourAllLights()
     {
 
-        if (State == 0);
-        colourLight(bottom, OUColour.BLACK);
-        colourLight(topLeft, OUColour.BLACK);
-        colourLight(topRight, OUColour.BLACK);
+        if (State == 0)
+        {
+            colourLight(bottom, OUColour.BLACK);
+            colourLight(topLeft, OUColour.BLACK);
+            colourLight(topRight, OUColour.BLACK);
+        }
 
-        if (State == 1);
-        colourLight(bottom, OUColour.ORANGE);
-        colourLight(topLeft, OUColour.BLACK);
-        colourLight(topRight, OUColour.BLACK);
+        else if (State == 1)
+        {
+            colourLight(bottom, OUColour.ORANGE);
+            colourLight(topLeft, OUColour.BLACK);
+            colourLight(topRight, OUColour.BLACK);
+        }
 
-        if (State == 2);
-        colourLight(bottom, OUColour.BLACK);
-        colourLight(topLeft, OUColour.RED);
-        colourLight(topRight, OUColour.BLACK);
+        else if (State == 2)
+        {
+            colourLight(bottom, OUColour.BLACK);
+            colourLight(topLeft, OUColour.RED);
+            colourLight(topRight, OUColour.BLACK);
+        }
 
-        if (State == 3);
-        colourLight(bottom, OUColour.BLACK);
-        colourLight(topLeft, OUColour.BLACK);
-        colourLight(topRight, OUColour.RED);
+        else
+        {
+            colourLight(bottom, OUColour.BLACK);
+            colourLight(topLeft, OUColour.BLACK);
+            colourLight(topRight, OUColour.RED);
+        }
 
     }
    /**
