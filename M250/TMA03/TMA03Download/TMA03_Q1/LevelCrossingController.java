@@ -170,12 +170,18 @@ public class LevelCrossingController
    */
    public static final int MIN_REPEATS = 4;
 
-   public void doTrainAproaching;
+   public void doTrainApproaching()
     {
-        System.out.priintlm("Train approaching");
+        System.out.println("Train approaching");
         setTrainComing(true);
+        delay();
         changeState();
+        delay();
+        colourAllLights();
         System.out.println("Barrier Lowered");
+        findNumRepeats();
+        delay();
+
     }
 }
 

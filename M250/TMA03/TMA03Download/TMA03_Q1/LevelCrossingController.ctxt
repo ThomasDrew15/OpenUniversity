@@ -25,4 +25,6 @@ comment7.target=void\ changeState()
 comment7.text=\n\ Qci\n
 comment8.params=
 comment8.target=void\ colourAllLights()
-numComments=9
+comment9.params=
+comment9.target=void\ doTrainApproaching()
+numComments=10
