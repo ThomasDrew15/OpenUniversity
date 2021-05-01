@@ -61,14 +61,14 @@ public class LevelCrossingController
             try
             {
                 repeats = Integer.parseInt(timesAsString);
-                if (timesAsString < 4)
-                {
-                    OUDialog.alert("Select a number higher than four");
-                }
             }
             catch (Exception e)
             {
                 System.out.println(e + " Please enter an integer");
+            }
+            if (repeats < 4)
+            {
+                OUDialog.alert("Select a number higher than four");
             }
         }
        return repeats;
