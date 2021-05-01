@@ -169,6 +169,14 @@ public class LevelCrossingController
    * Q1di
    */
    public static final int MIN_REPEATS = 4;
+
+   public void doTrainAproaching;
+    {
+        System.out.priintlm("Train approaching");
+        setTrainComing(true);
+        changeState();
+        System.out.println("Barrier Lowered");
+    }
 }
 
 
