@@ -177,7 +177,7 @@ public class LevelCrossingController
         delay(500);
         changeState();
         delay(500);
-        colourAllLights(500);
+        colourAllLights();
         System.out.println("Barrier Lowered");
         findNumRepeats();
         delay(500);
