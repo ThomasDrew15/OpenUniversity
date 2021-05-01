@@ -204,14 +204,14 @@ public class LevelCrossingController
     {
         System.out.println("Train approaching");
         setTrainComing(true);
-        delay(5000);
+        delay(2000);
         changeState();
-        delay(5000);
+        delay(2000);
         colourAllLights();
         System.out.println("Barrier Lowered");
         findNumRepeats();
-        delay(5000);
-        for (int i = 0; i < findNumRepeats(repeats); i++)
+        delay(2000);
+        for (int i = 0; i < repeats ; i++)
         {
             System.out.println(i);
         }
