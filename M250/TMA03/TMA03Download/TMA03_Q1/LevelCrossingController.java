@@ -129,7 +129,6 @@ public class LevelCrossingController
 
     public void changeState()
     {
-        this.State = 0;
 
         while (trainComing = true)
             if (this.State <= 2);
@@ -137,6 +136,9 @@ public class LevelCrossingController
 
             if (this.State == 3);
             this.State = this.State - 1;
+
+        while (trainComing = false)
+            this.State = 0;
 
 
     }
