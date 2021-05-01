@@ -66,6 +66,10 @@ public class LevelCrossingController
             {
                 System.out.println(e + " Please enter an integer");
             }
+            if (timesAsString < 4)
+            {
+                OUDialog.alert("Select a number higher than four");
+            }
         }
        return repeats;
     }
