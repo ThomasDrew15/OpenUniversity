@@ -143,6 +143,12 @@ public class LevelCrossingController
                 break;
             }
 
+            else if (this.State == 2)
+            {
+                this.State = this.State +1;
+                break;
+            }
+
             else
             {
                 this.State = this.State - 1;
