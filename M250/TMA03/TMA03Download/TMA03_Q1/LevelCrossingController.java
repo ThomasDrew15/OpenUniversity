@@ -211,7 +211,7 @@ public class LevelCrossingController
         System.out.println("Barrier Lowered");
         findNumRepeats();
         delay(5000);
-        for (int i = 0; i = repeats ; i++)
+        for (int i = 0; i < findNumRepeats(repeats); i++)
         {
             System.out.println(i);
         }
