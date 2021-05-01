@@ -174,13 +174,13 @@ public class LevelCrossingController
     {
         System.out.println("Train approaching");
         setTrainComing(true);
-        delay();
+        delay(500);
         changeState();
-        delay();
-        colourAllLights();
+        delay(500);
+        colourAllLights(500);
         System.out.println("Barrier Lowered");
         findNumRepeats();
-        delay();
+        delay(500);
 
     }
 }
