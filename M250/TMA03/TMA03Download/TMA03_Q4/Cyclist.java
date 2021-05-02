@@ -7,6 +7,7 @@
 public class Cyclist
 {
 /* static variables */
+    private static int nextNumber = 0; //Q4ai
 
 /* instance variables */   
    
@@ -14,7 +15,6 @@ public class Cyclist
    private String name;      // cyclist's name
    private String raceCat;   // Junior U18, Adult U40, or Veteran 40 and over
    private int time;         // cyclist's race time in tenths of a second
-    private int nextNumber;  //Q4ai
    
    /**
     * Constructor for objects of class Cyclist
@@ -24,7 +24,13 @@ public class Cyclist
       this.name = aName;
       this.raceCat  = raceCat;
       this.time = 0;
-      this.nextNumber = 0; //Q4ai
+
+       /**
+        * Q4aii Increments nextNumber by 1
+        */
+       nextNumber = nextNumber + 1;
+       this.number = nextNumber;
+       Cyclist.nextNumber = nextNumber;
     }
 
     /* instance methods */
@@ -85,18 +91,5 @@ public class Cyclist
       this.time = aTime;
    }
 
-    /**
-     * Q4aii Increments nextNumber by 1
-     */
-
-    public int getNextNumber()
-    {
-        return nextNumber;
-    }
-
-    public void setNextNumber(int nextNumber) {
-        this.nextNumber = nextNumber++;
-        System.out.println(nextNumber);
-    }
 }
 
