@@ -83,9 +83,28 @@ public class CyclingAdmin
             }
         }
     }
-   
-   
-   /**
+
+    /**
+     * Q4biii
+     */
+    public void rideRace()
+    {
+        int time;
+
+        Random generator = new Random();
+        for (int i = 0; i < cyclists.size(); i++)
+        {
+            int ranGenNum = generator.nextInt();
+            ranGenNum = generator.nextInt(6001) + 6000;
+            System.out.println(ranGenNum);
+            //time = ranGenNum;
+            //Cyclist.add(time);
+
+        }
+    }
+
+
+    /**
     * Clears the cyclists list.
     */   
     public void clear()
