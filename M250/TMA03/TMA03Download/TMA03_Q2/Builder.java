@@ -9,59 +9,69 @@ import java.util.*;
  */
  public class Builder
 {
+    //Q2ai
+    private Map<String, Contractor> contractors;
+
     /**
      * Constructor for objects of class Builder
      */
     public Builder()
     {
         super();
-        contractors = new HashMap<>();
+        contractors = new HashMap<>(); //Q2aii
     }
 
-    private Map<String, Contractor> contractors;
+    /**
+     * Q2aiii
+     * @param aReg
+     * @param aName
+     * @param anAddress
+     * @param aTrade
+     */
 
     public void addContractor(String aReg, String aName, String anAddress, String aTrade)
     {
         contractors.put(aReg, new Contractor(aName, anAddress, aTrade));
     }
 
-    public void printContractor()
+    /**
+     *  Q2aiv
+     */
+     public void printContractor()
+     {
+         for (String aReg : contractors.keySet())
+         {
+             System.out.println(contractors);
+         }
+     }
+
+
+    /**
+     * Q2b
+     * @param registrationToFind
+     * @return
+     */
+
+    public Contractor findContractor(String registrationToFind)
     {
-        for (String aReg : contractors.keySet())
+        if (contractors.containsKey(registrationToFind))
         {
-            System.out.println(contractors);
+            return contractors.get(registrationToFind);
+        }
+        else
+        {
+            System.out.println(registrationToFind + " cannot be found.");
+            return null;
         }
     }
 
-    public Contractor findContractor(String regFind)
+
+
+    public void findContractorsForTrade(String tradeToFind)
     {
-        Set<String> contractorsKeys = contractors.keySet(); for (String aReg: contractorsKeys)
-        {
-            System.out.println("registration " + regFind + " is " + contractors.get(regFind));
-            Contractor = regFind;
-            return Contractor;
-        }
-
+        
+         
     }
-
-    //public String findContractorsForTrade(String trade)
-    //{
-        //Set<String> tradeSet = new HashSet<String>();
-
-        //contractors.put("plumber", getContractor);
-        //tradeSet = contractors.get(trade);
-        //System.out.println("the trade is "
-                //+ tradeSet);
-
-        //for (String aTrade : contractors.keySet())
-        //{
-        //    tradeSet = contractors.get(aTrade);
-          //  System.out.println(aTrade + " is interested in: "
-            //        + tradeSet);
-        //}
-    //}
-
-
 
 }
    
