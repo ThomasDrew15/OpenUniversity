@@ -65,10 +65,20 @@ public class CyclingAdmin
              lineScanner.useDelimiter(",");
              name = lineScanner.next();
              age = lineScanner.nextInt();
+             if (age < 18)
+                raceCat = "Junior";
+             if (age >= 18) && if (age < 40)
+                raceCat = "Adult";
+             if (age >= 40)
+           cyclists.add(Cyclist);
+
 
           }
-
        }
+       catch (Exception e)
+            {
+                System.out.println(e + " Exception");
+            }
     }
 }
 
