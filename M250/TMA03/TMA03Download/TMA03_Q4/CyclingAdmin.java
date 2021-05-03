@@ -56,16 +56,11 @@ public class CyclingAdmin
                 lineScanner.useDelimiter(",");
                 name = lineScanner.next();
                 age = lineScanner.nextInt();
-                if (age < 18)
-                {
+                if (age < 18) {
                     raceCat = ("Junior");
-                }
-                else if (age >= 18 && age < 40)
-                {
+                } else if (age >= 18 && age < 40) {
                     raceCat = ("Adult");
-                }
-                else
-                {
+                } else {
                     raceCat = ("Veteran");
                 }
                 cyclists.add(new Cyclist(name, raceCat));
@@ -75,6 +70,17 @@ public class CyclingAdmin
         catch (Exception e)
         {
             System.out.println(e + " Exception");
+        }
+        finally
+        {
+            try
+            {
+                bufferedFileReader.close();
+            }
+            catch (Exception e)
+            {
+                System.out.println(e + " Exception");
+            }
         }
     }
    
