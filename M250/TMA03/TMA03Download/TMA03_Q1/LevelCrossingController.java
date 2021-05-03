@@ -45,7 +45,7 @@ public class LevelCrossingController
   
    /**
     * Find out how many times red lights should flash at the crossing.
-    * Simulates length of train at crossing.
+    * Simulates length of train at crossing. Q4dii
     */   
     public static int findNumRepeats()
     {
@@ -109,6 +109,8 @@ public class LevelCrossingController
      *  Qbii. Constructor for lights
      */
 
+
+
      public LevelCrossingController(Light lightOne, Light lightTwo, Light lightThree)
      {
          this.topLeft = lightOne;
@@ -120,6 +122,9 @@ public class LevelCrossingController
          State = 0;
 
          setTrainComing(false);
+
+         //Q1ciii
+         colourAllLights();
 
      }
 
@@ -163,6 +168,9 @@ public class LevelCrossingController
 
     }
 
+    /**
+     * Q1cii
+     */
     public void colourAllLights()
     {
 
@@ -195,8 +203,11 @@ public class LevelCrossingController
         }
 
     }
+
+
+
    /**
-   * Q1di
+   * Q1e
    */
    public static final int MIN_REPEATS = 4;
 
@@ -209,14 +220,13 @@ public class LevelCrossingController
         delay(2000);
         colourAllLights();
         System.out.println("Barrier Lowered");
-        findNumRepeats();
-        delay(2000);
-        /**
-         * for (int i = 0; i < repeats ; i++)
-         * for amount of times repeats is specified, change state to 2, then 3
-         * {
-         *  }
-         */
+        int reps = findNumRepeats();
+        for ( int i = 0; i < reps; i++)
+        {
+            changeState();
+            colourAllLights();
+            delay(2000);
+        }
         delay(2000);
         setTrainComing(false);
         System.out.println("Barrier raised");
