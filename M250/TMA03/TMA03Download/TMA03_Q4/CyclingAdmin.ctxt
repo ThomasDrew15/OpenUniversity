@@ -1,5 +1,11 @@
 #BlueJ class context
 comment0.params=
 comment0.target=CyclingAdmin()
-comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ CyclingAdmin\r\n
-numComments=1
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ CyclingAdmin\n
+comment1.params=
+comment1.target=void\ readInCyclists()
+comment1.text=instance\ methods
+comment2.params=
+comment2.target=void\ clear()
+comment2.text=\n\ Clears\ the\ cyclists\ list.\n
+numComments=3

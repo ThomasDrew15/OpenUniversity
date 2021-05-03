@@ -16,7 +16,7 @@ public class CyclingAdmin
     * Q4bi
     */
    private List<Cyclist> cyclists;
-   
+
    /* static variables */
    public static final int MIN_RACE_TIME = 6000;   //the minimum time to
             //complete the race in tenths of a second (i.e. 10 mins)
@@ -29,11 +29,54 @@ public class CyclingAdmin
    public CyclingAdmin()
    {
       super();
-      cyclists = new arrayList<Cyclist>();
+      cyclists = new ArrayList<Cyclist>();
    }
 
  
 /* instance methods */
+
+    public void readInCyclists()
+    {
+        String pathname = OUFileChooser.getFilename();
+        File aFile = new File(pathname);
+        BufferedReader bufferedFileReader = null;
+
+        try
+        {
+            String name;
+            String raceCat;
+            int age;
+            Scanner lineScanner;
+            bufferedFileReader = new BufferedReader(new FileReader(aFile));
+            String currentLine = bufferedFileReader.readLine();
+
+            while (currentLine != null)
+            {
+                lineScanner = new Scanner(currentLine);
+                lineScanner.useDelimiter(",");
+                name = lineScanner.next();
+                age = lineScanner.nextInt();
+                if (age < 18)
+                {
+                    raceCat = ("Junior");
+                }
+                else if (age >= 18 && age < 40)
+                {
+                    raceCat = ("Adult");
+                }
+                else
+                {
+                    raceCat = ("Veteran");
+                }
+                cyclists.add(new Cyclist(name, raceCat));
+                currentLine = bufferedFileReader.readLine();
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println(e + " Exception");
+        }
+    }
    
    
    /**
@@ -42,43 +85,6 @@ public class CyclingAdmin
     public void clear()
     {
        this.cyclists.clear();
-    }
-
-    public void readInCyclists()
-    {
-       String pathname = OUFileChooser.getFilename();
-       File aFile = new File(pathname);
-       BufferedReader bufferedFileReader = null;
-
-       try
-       {
-          String name;
-          String raceCat;
-          int age;
-          Scanner lineScanner;
-          bufferedFileReader = new BufferedReader(new FileReader(aFile));
-          String currentLine = bufferedFileReader.readLine();
-
-          while (currentLine = null)
-          {
-             lineScanner = new Scanner(currentLine);
-             lineScanner.useDelimiter(",");
-             name = lineScanner.next();
-             age = lineScanner.nextInt();
-             if (age < 18)
-                raceCat = "Junior";
-             if (age >= 18) && if (age < 40)
-                raceCat = "Adult";
-             if (age >= 40)
-           cyclists.add(Cyclist);
-
-
-          }
-       }
-       catch (Exception e)
-            {
-                System.out.println(e + " Exception");
-            }
     }
 }
 
