@@ -43,5 +43,32 @@ public class CyclingAdmin
     {
        this.cyclists.clear();
     }
+
+    public void readInCyclists()
+    {
+       String pathname = OUFileChooser.getFilename();
+       File aFile = new File(pathname);
+       BufferedReader bufferedFileReader = null;
+
+       try
+       {
+          String name;
+          String raceCat;
+          int age;
+          Scanner lineScanner;
+          bufferedFileReader = new BufferedReader(new FileReader(aFile));
+          String currentLine = bufferedFileReader.readLine();
+
+          while (currentLine = null)
+          {
+             lineScanner = new Scanner(currentLine);
+             lineScanner.useDelimiter(",");
+             name = lineScanner.next();
+             age = lineScanner.nextInt();
+
+          }
+
+       }
+    }
 }
 
