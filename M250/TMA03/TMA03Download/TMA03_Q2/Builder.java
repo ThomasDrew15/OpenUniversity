@@ -1,3 +1,5 @@
+
+
 import java.util.*;
 
 /**
@@ -66,14 +68,26 @@ import java.util.*;
     }
 
 
-
-    public void findContractorsForTrade(String tradeToFind)
+    /**
+     * Q2c
+     * @param tradeToFind
+     * @return
+     */
+    public HashSet<Contractor> findContractorsForTrade(String tradeToFind)
     {
-        
-         
+        HashSet<Contractor> contractorHashSet = new HashSet<>();
+
+        for (Contractor i: contractors.values())
+            if (i.getTrade().equals(tradeToFind))
+            {
+                contractorHashSet.add(i);
+            }
+
+        return contractorHashSet;
     }
 
 }
+
    
    
 
