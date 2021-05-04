@@ -87,20 +87,17 @@ public class CyclingAdmin
     /**
      * Q4biii
      */
-    public void rideRace()
-    {
-        int time;
+    public void rideRace() {
 
         Random generator = new Random();
-        for (int i = 0; i < cyclists.size(); i++)
-        {
-            int ranGenNum = generator.nextInt();
-            ranGenNum = generator.nextInt(6001) + 6000;
-            System.out.println(ranGenNum);
-            //time = ranGenNum;
-            //Cyclist.add(time);
 
+        for (Cyclist i : cyclists) {
+            int ranGenNum = generator.nextInt();
+            ranGenNum = generator.nextInt(MIN_RACE_TIME) + MIN_RACE_TIME;
+            System.out.println(ranGenNum);
+            i.setTime(ranGenNum);
         }
+        System.out.println(cyclists);
     }
 
 
