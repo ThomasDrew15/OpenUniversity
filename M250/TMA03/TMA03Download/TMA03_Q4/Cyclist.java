@@ -4,8 +4,11 @@
  * @author 
  * @version
  */
-public class Cyclist
+public class Cyclist implements Comparable<Cyclist>
 {
+
+       
+
 /* static variables */
     private static int nextNumber = 0; //Q4ai
 
@@ -91,5 +94,41 @@ public class Cyclist
       this.time = aTime;
    }
 
-}
+    /**
+     * Q4ci
+     * @return
+     */
+    @Override
+    public String toString()
+    {
+        int minutes = (time * 36000) / 60;
+        double seconds = time * 10 ;
+
+        String formatTime;
+        formatTime = String.format("%s \t %d mins %.1f secs \t %s",
+                minutes,
+                seconds);
+        System.out.println(formatTime);
+
+        return "Cyclist{" +
+                "name='" + name + '\'' +
+                ", raceCat='" + raceCat + '\'' +
+                ", time=" + formatTime +
+                '}';
+    }
+
+    /**
+     * Q4cii
+     * @param anotherCyclist
+     * @return
+     */
+    public int compareTo(Cyclist anotherCyclist)
+    {
+        return (this.getTime() - anotherCyclist.getTime());
+    }
+
+
+
+   }
+   
 

@@ -97,9 +97,22 @@ public class CyclingAdmin
             System.out.println(ranGenNum);
             i.setTime(ranGenNum);
         }
-        System.out.println(cyclists);
+        //System.out.println(cyclists);
     }
 
+    /**
+     * Q4d
+     */
+    public void displayResults()
+    {
+        ArrayList <Cyclist> cyclistsCopy = new ArrayList<>();
+        cyclistsCopy.addAll(cyclists);
+        Collections.sort(cyclistsCopy);
+        for (Cyclist i: cyclistsCopy)
+        {
+            System.out.println(i);
+        }
+    }
 
     /**
     * Clears the cyclists list.
