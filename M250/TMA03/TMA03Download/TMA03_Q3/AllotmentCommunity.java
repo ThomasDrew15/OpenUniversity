@@ -39,12 +39,13 @@ import java.util.*;
     /**
      *  Q2aiv
      */
-     public void printBed()
+     public void printMap()
      {
-         for (String aBed : beds.keySet())
+         for (String raisedBed : beds.keySet())
          {
-             System.out.println(beds);
+             System.out.println(raisedBed + " " + beds.get(raisedBed));
          }
+      
      }
 
 
