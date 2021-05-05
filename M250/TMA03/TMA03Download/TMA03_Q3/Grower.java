@@ -9,7 +9,7 @@ import java.util.*;
  * @author 
  * @version  
  */
- public class Grower
+ public class AllotmentCommunity
 {
     //Q2ai
     private Map<Gardener, String> gardeners;
@@ -17,7 +17,7 @@ import java.util.*;
     /**
      * Constructor for objects of class Builder
      */
-    public Grower()
+    public AllotmentCommunity()
     {
         super();
         gardeners = new HashMap<>(); //Q2aii
@@ -31,9 +31,9 @@ import java.util.*;
      * @param aTrade
      */
 
-    public void addContractor(String aReg, String aName, String anAddress, String aTrade)
+    public void addContractor(String aFirstName, String aSecondName, String aLike, String aBed)
     {
-        gardeners.put(aBed, new Gardener(aFirstName, aSecondName, aLike));
+        gardeners.put(new Gardener(aFirstName, aSecondName, aLike), aBed);
     }
 
     /**
