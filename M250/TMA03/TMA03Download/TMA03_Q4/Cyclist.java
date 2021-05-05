@@ -7,18 +7,17 @@
 public class Cyclist implements Comparable<Cyclist>
 {
 
-       
 
-/* static variables */
-    private static int nextNumber = 0; //Q4ai
+   /* static variables */
+   private static int nextNumber = 0; //Q4ai
 
-/* instance variables */   
-   
+   /* instance variables */   
+
    private int number;       // cyclist's number
    private String name;      // cyclist's name
    private String raceCat;   // Junior U18, Adult U40, or Veteran 40 and over
    private int time;         // cyclist's race time in tenths of a second
-   
+
    /**
     * Constructor for objects of class Cyclist
     */
@@ -28,15 +27,15 @@ public class Cyclist implements Comparable<Cyclist>
       this.raceCat  = raceCat;
       this.time = 0;
 
-       /**
-        * Q4aii Increments nextNumber by 1
-        */
-       nextNumber = nextNumber + 1;
-       this.number = nextNumber;
-       Cyclist.nextNumber = nextNumber;
-    }
+      /**
+       * Q4aii Increments nextNumber by 1
+       */
+      nextNumber = nextNumber + 1;
+      this.number = nextNumber;
+      Cyclist.nextNumber = nextNumber;
+   }
 
-    /* instance methods */
+   /* instance methods */
 
    /**
     * Returns the receiver's number
@@ -45,7 +44,7 @@ public class Cyclist implements Comparable<Cyclist>
    {
       return this.number;
    }
-   
+
    /**
     * Returns the receiver's name
     */
@@ -53,7 +52,7 @@ public class Cyclist implements Comparable<Cyclist>
    {
       return this.name;
    }
-   
+
    /**
     * Sets the receiver's name
     */
@@ -62,22 +61,22 @@ public class Cyclist implements Comparable<Cyclist>
       this.name = aName;
    } 
 
-    /**
-     * @return the race category
-     */
-    public String getRaceCat()
-    {
-        return raceCat;
-    }
+   /**
+    * @return the race category
+    */
+   public String getRaceCat()
+   {
+      return raceCat;
+   }
 
-    /**
-     * @param raceCat the race category to set
-     */
-    public void setRaceCat(String raceCat)
-    {
-        this.raceCat = raceCat;
-    }
-   
+   /**
+    * @param raceCat the race category to set
+    */
+   public void setRaceCat(String raceCat)
+   {
+      this.raceCat = raceCat;
+   }
+
    /**
     * Returns the receiver's time
     */
@@ -85,7 +84,7 @@ public class Cyclist implements Comparable<Cyclist>
    {
       return this.time;
    }
-   
+
    /**
     * Sets the receiver's time in tenths of a second
     */
@@ -94,37 +93,34 @@ public class Cyclist implements Comparable<Cyclist>
       this.time = aTime;
    }
 
-    /**
-     * Q4ci
-     * @return
-     */
+   /**
+    * Q4ci
+    * @return
+    */
 
-    public String toString()
-    {
-        int minutes = 0;
-        double seconds = 0.0;
+   public String toString()
+   {
+      int minutes = 0;
+      double seconds = 0.0;
 
-        minutes = time%60;
-        seconds = (time%60) *60;
+      minutes = time / 600;
+      seconds = time % 60;
 
-        return String.format("%s \t %d mins %.1f secs \t %s",
-                name, minutes, seconds, raceCat);
-
-    }
-    
-
-    /**
-     * Q4cii
-     * @param anotherCyclist
-     * @return
-     */
-    public int compareTo(Cyclist anotherCyclist)
-    {
-        return (this.getTime() - anotherCyclist.getTime());
-    }
-
-
+      return String.format("%s \t %d mins %.1f secs \t %s",
+         name, minutes, seconds, raceCat);
 
    }
-   
+
+   /**
+    * Q4cii
+    * @param anotherCyclist
+    * @return
+    */
+   public int compareTo(Cyclist anotherCyclist)
+   {
+      return (this.getTime() - anotherCyclist.getTime());
+   }
+
+
+}
 
