@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=AllotmentCommunity()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Builder\n
+comment1.params=aBed\ aFirstPlant\ aSecondPlant\ aThirdPlant
+comment1.target=void\ addMapEntry(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\n\ Q2aiii\n\ @param\ aBed\n\ @param\ aFirstPlant\n\ @param\ aSecondPlant\n\ @param\ aThirdPlant\n
+comment2.params=
+comment2.target=void\ printMap()
+comment2.text=\n\ \ Q2aiv\n
+comment3.params=bedToFind
+comment3.target=Bed\ printMapValue(java.lang.String)
+comment3.text=\n\ Q2b\n\ @param\ bedToFind\n\ @return\n
+comment4.params=plantToFind
+comment4.target=java.util.HashSet\ whatIsPlantedWith(java.lang.String)
+comment4.text=\n\ Q2c\n\ @param\ plantToFind\n\ @return\n
+comment5.params=bedToRemove
+comment5.target=boolean\ deleteEntry(java.lang.String)
+numComments=6
