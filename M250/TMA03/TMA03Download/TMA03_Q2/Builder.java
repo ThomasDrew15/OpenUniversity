@@ -31,7 +31,7 @@ import java.util.*;
      * @param aTrade
      */
 
-    public void addContractor(String aReg, String aName, String anAddress, String aTrade)
+    public void addContraactor(String aReg, String aName, String anAddress, String aTrade)
     {
         contractors.put(aReg, new Contractor(aName, anAddress, aTrade));
     }
