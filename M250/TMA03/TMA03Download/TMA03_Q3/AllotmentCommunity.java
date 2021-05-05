@@ -12,7 +12,7 @@ import java.util.*;
  public class AllotmentCommunity
 {
     //Q2ai
-    private Map<Gardener, String> gardeners;
+    private Map<String, Bed> beds;
 
     /**
      * Constructor for objects of class Builder
@@ -20,7 +20,7 @@ import java.util.*;
     public AllotmentCommunity()
     {
         super();
-        gardeners = new HashMap<>(); //Q2aii
+        beds = new HashMap<>(); //Q2aii
     }
 
     /**
@@ -31,19 +31,19 @@ import java.util.*;
      * @param aThirdPlant
      */
 
-    public void addGardener(String aBed, String aFirstPlant , String aSecondPlant, String aThirdPlant)
+    public void addBed(String aBed, String aFirstPlant, String aSecondPlant, String aThirdPlant)
     {
-        gardeners.put(aBed, new Gardener(aFirstPlant, aSecondPlant, aThirdPlant));
+        beds.put(aBed, new Bed(aFirstPlant, aSecondPlant, aThirdPlant));
     }
 
     /**
      *  Q2aiv
      */
-     public void printGardener()
+     public void printBed()
      {
-         for (String aBed : gardeners.keySet())
+         for (String aBed : beds.keySet())
          {
-             System.out.println(gardeners);
+             System.out.println(beds);
          }
      }
 
@@ -54,11 +54,11 @@ import java.util.*;
      * @return
      */
 
-    public Gardener findGardener(String bedToFind)
+    public Bed inThisBed(String bedToFind)
     {
-        if (gardeners.containsKey(bedToFind))
+        if (beds.containsKey(bedToFind))
         {
-            return gardeners.get(bedToFind);
+            return beds.get(bedToFind);
         }
         else
         {
@@ -73,17 +73,17 @@ import java.util.*;
      * @param plantToFind
      * @return
      */
-    public HashSet<Gardener> findGardenerWithLike(String plantToFind)
+    public HashSet<Bed> whatIsPlantedWith(String plantToFind)
     {
-        HashSet<Gardener> gardenerHashSet = new HashSet<>();
+        HashSet<Bed> bedHashSet = new HashSet<>();
 
-        for (Gardener i: gardeners.values())
+        for (Bed i: beds.values())
             if (i.getThirdPlant().equals(plantToFind))
             {
-                gardenerHashSet.add(i);
+                bedHashSet.add(i);
             }
 
-        return gardenerHashSet;
+        return bedHashSet;
     }
 
 }
