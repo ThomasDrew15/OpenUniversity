@@ -103,7 +103,6 @@ public class Cyclist implements Comparable<Cyclist>
     {
         int minutes = 0;
         double seconds = 0.0;
-        String formatTime;
 
         minutes = time%60;
         seconds = (time%60) *60;
