@@ -7,42 +7,42 @@
  */
 public class Gardener
 {
-   private String firstName;
-   private String secondName;
-   private String likes;
+   private String firstPlant;
+   private String secondPlant;
+   private String thirdPlant;
 
    /**
     * Constructor for objects of class Gardener
     */
-   public Gardener(String aFirstName, String aSecondName, 
-   String aLike)
+   public Gardener(String aFirstPlant, String aSecondPlant,
+   String aThirdPlant)
    {
-      this.firstName = aFirstName;
-      this.secondName = aSecondName;
-      this.likes = aLike;
+      this.firstPlant = aFirstPlant;
+      this.secondPlant = aSecondPlant;
+      this.thirdPlant = aThirdPlant;
    }
   /**
    * returns the name of the gardener
    */
-   public String getFirstName()
+   public String getFirstPlant()
    {
-      return this.firstName;
+      return this.firstPlant;
    }
   
    /**
    * returns the address of the gardener
    */
-   public String getSecondName()
+   public String getSecondPlant()
    {
-      return this.secondName;
+      return this.secondPlant;
    }
   
    /**
    * returns the trade of the gardener
    */
-   public String getLike()
+   public String getThirdPlant()
    {
-      return this.likes;
+      return this.thirdPlant;
    }
    
    /**
@@ -50,9 +50,9 @@ public class Gardener
    */
    public String toString()
    {
-      return (this.getFirstName() + ", " 
-	          + this.getSecondName() 
-			  + ", likes: " + this.getLike());
+      return (this.getFirstPlant() + ", "
+	          + this.getSecondPlant()
+			  + this.getThirdPlant());
    }
 }
 
