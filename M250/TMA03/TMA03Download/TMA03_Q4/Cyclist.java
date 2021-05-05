@@ -98,24 +98,21 @@ public class Cyclist implements Comparable<Cyclist>
      * Q4ci
      * @return
      */
-    @Override
+
     public String toString()
     {
-        int minutes = (time * 36000) / 60;
-        double seconds = time * 10 ;
-
+        int minutes = 0;
+        double seconds = 0.0;
         String formatTime;
-        formatTime = String.format("%s \t %d mins %.1f secs \t %s",
-                minutes,
-                seconds);
-        System.out.println(formatTime);
 
-        return "Cyclist{" +
-                "name='" + name + '\'' +
-                ", raceCat='" + raceCat + '\'' +
-                ", time=" + formatTime +
-                '}';
+        minutes = time%60;
+        seconds = (time%60) *60;
+
+        return String.format("%s \t %d mins %.1f secs \t %s",
+                name, minutes, seconds, raceCat);
+
     }
+    
 
     /**
      * Q4cii
