@@ -8,7 +8,7 @@ import ou.*;
  * @version 1.0
  */
 
-public class GardenTracker
+public class AllotmentCommunity
 {
     Map<String, Set<String>> bed = new HashMap<>();
     Set<String> growing = new HashSet<>();
@@ -16,13 +16,18 @@ public class GardenTracker
     /**
      * Stores and retrieves data about client names and interests.
      */
-    //public void Tracker()
-    //{
+    public void populate()
+    {
+        growing.add("Carrots");
+        growing.add("Potatoes");
+        bed.put("bed 1", growing);
 
-    //}
+        growing = new HashSet<>();
+        growing.add("Peas");
+        growing.add("Turnips");
+        bed.put("bed 2", growing);
+    }
 
-
-        //phonebook.put("Captain Pugwash", "6001");
 
 
 
