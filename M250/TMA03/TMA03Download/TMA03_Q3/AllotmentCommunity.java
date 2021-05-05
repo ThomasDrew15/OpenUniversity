@@ -31,7 +31,7 @@ import java.util.*;
      * @param aThirdPlant
      */
 
-    public void addBed(String aBed, String aFirstPlant, String aSecondPlant, String aThirdPlant)
+    public void addMapEntry()(String aBed, String aFirstPlant, String aSecondPlant, String aThirdPlant)
     {
         beds.put(aBed, new Bed(aFirstPlant, aSecondPlant, aThirdPlant));
     }
@@ -55,7 +55,7 @@ import java.util.*;
      * @return
      */
 
-    public Bed inThisBed(String bedToFind)
+    public Bed printMapValue()(String bedToFind)
     {
         if (beds.containsKey(bedToFind))
         {
