@@ -5,7 +5,7 @@
  * @author M250 module team
  * @version v1.0
  */
-public class Gardener
+public class Bed
 {
    private String firstPlant;
    private String secondPlant;
@@ -14,7 +14,7 @@ public class Gardener
    /**
     * Constructor for objects of class Gardener
     */
-   public Gardener(String aFirstPlant, String aSecondPlant,
+   public Bed(String aFirstPlant, String aSecondPlant,
    String aThirdPlant)
    {
       this.firstPlant = aFirstPlant;
@@ -51,7 +51,7 @@ public class Gardener
    public String toString()
    {
       return (this.getFirstPlant() + ", "
-	          + this.getSecondPlant()
+	          + this.getSecondPlant() + ", "
 			  + this.getThirdPlant());
    }
 }
