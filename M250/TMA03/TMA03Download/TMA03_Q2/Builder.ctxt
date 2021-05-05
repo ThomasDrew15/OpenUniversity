@@ -13,4 +13,5 @@ comment3.target=Contractor\ findContractor(java.lang.String)
 comment3.text=\n\ Q2b\n\ @param\ registrationToFind\n\ @return\n
 comment4.params=tradeToFind
 comment4.target=java.util.HashSet\ findContractorsForTrade(java.lang.String)
+comment4.text=\n\ Q2c\n\ @param\ tradeToFind\n\ @return\n
 numComments=5
