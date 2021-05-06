@@ -1,5 +1,14 @@
 #BlueJ class context
 comment0.params=
-comment0.target=void\ populate()
+comment0.target=void\ populateTestData()
 comment0.text=\n\ Stores\ and\ retrieves\ data\ about\ client\ names\ and\ interests.\n
-numComments=1
+comment1.params=
+comment1.target=void\ printMap()
+comment1.text=\n\ Takes\ no\ arguments\ and\ iterates\ over\ all\ the\ map's\ keys\ to\ print\ out\ a\ meaningful\ textual\ representation\n\ of\ each\ key\ in\ the\ map\ and\ the\ associated\ value.\ Returns\ no\ value.\n
+comment2.params=bedToFind
+comment2.target=void\ printMapValue(java.lang.String)
+comment2.text=\n\ Takes\ a\ single\ argument.\ If\ the\ argument\ is\ a\ key\ in\ the\ map,\ prints\ a\ meaningful\ textual\ representation\ of\n\ its\ associated\ value,\ otherwise\ prints\ an\ output\ line\ announcing\ that\ the\ key\ is\ not\ present.\ Returns\ no\ value.\n\n\ @param\ bedToFind\n
+comment3.params=akey\ aValue
+comment3.target=void\ addMapEntry(java.lang.String,\ java.lang.String)
+comment3.text=\n\ \\\n\ Takes\ two\ arguments\ representing\ a\ key\ and\ a\ value.\ Adds\ the\ key\ and\ value\ to\ the\ map.\n\ If\ the\ key\ is\ already\ present\ the\ existing\ value\ is\ overwritten.\ Returns\ no\ value.\n\n\ @param\ aString\n\ @param\ aSet\n
+numComments=4
