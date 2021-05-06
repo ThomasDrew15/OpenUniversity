@@ -41,10 +41,11 @@ import java.util.*;
      */
      public void printContractor()
      {
-         for (String aReg : contractors.keySet())
+         for (String c : contractors.keySet())
          {
-             System.out.println(contractors);
+             System.out.println(c + " " + contractors.get(c));
          }
+
      }
 
 
