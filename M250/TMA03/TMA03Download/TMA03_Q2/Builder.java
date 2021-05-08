@@ -38,6 +38,7 @@ import java.util.*;
 
     /**
      *  Q2aiv
+     *  Prints contents of map contractors
      */
      public void printContractor()
      {
@@ -51,6 +52,7 @@ import java.util.*;
 
     /**
      * Q2b
+     * takes a string to represent the key, returns the values associated with that key.
      * @param registrationToFind
      * @return
      */
@@ -71,6 +73,8 @@ import java.util.*;
 
     /**
      * Q2c
+     * Takes string argument as trade and returns the values associated with that trade for each objet
+     * as a collection.
      * @param tradeToFind
      * @return
      */

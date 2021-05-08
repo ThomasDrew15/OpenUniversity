@@ -6,7 +6,7 @@ import ou.*;
  * @version 1.0
  */
 public class LevelCrossingController
-{  
+{
    private Light topLeft;
    private Light topRight;
    private Light bottom;
@@ -46,34 +46,35 @@ public class LevelCrossingController
    /**
     * Find out how many times red lights should flash at the crossing.
     * Simulates length of train at crossing. Q4dii
-    */   
+    */
     public static int findNumRepeats()
     {
-       int repeats = 0;
-        String timesAsString =
-          OUDialog.request("How many times should the red lights"
-          + " flash? ("
-          + LevelCrossingController.MIN_REPEATS
-          + " or over times)");
+        int repeats = 0;
+        boolean again = true;
 
-        if (timesAsString != null)
+        while (again)
         {
-            try
-            {
-                repeats = Integer.parseInt(timesAsString);
-                if (repeats < 4)
-                {
-                   OUDialog.alert("Select a number equal to or higher than four");
+            String timesAsString = OUDialog.request("How many times should the red lights"
+                    + " flash? ("
+                    + LevelCrossingController.MIN_REPEATS
+                    + " or over times)");
+            try {
+                if (timesAsString != null) {
+                    repeats = Integer.parseInt(timesAsString);
                 }
-            }
-            catch (Exception e)
+                if (repeats < 4) {
+                    OUDialog.alert("Enter an integer equal to or higher than " + MIN_REPEATS);
+                }
+            } catch (Exception e) //to handle only parseInt, use NumberFormatException
             {
-                System.out.println(e + " Please enter an integer");
+                e.printStackTrace();
+                OUDialog.alert("Enter an integer");
             }
+            again = OUDialog.confirm("Yes to try again, no to confirm choice if 4 or higher, or exit");
         }
-       return repeats;
+        return repeats;
     }
-    
+
    /**
     * Causes execution to pause for a number of milliseconds.
     */
@@ -90,7 +91,8 @@ public class LevelCrossingController
     }
     
     /**
-     * Qa This method should set the colour of the specified light to the specified colour if it is one of OUColour.RED, OUColour.GREEN, OUColour.ORANGE or OUColour.BLACK.
+     * Qa This method should set the colour of the specified light to the specified colour if it is one of
+     * OUColour.RED, OUColour.GREEN, OUColour.ORANGE or OUColour.BLACK.
      * Otherwise the colour should be unchanged. 
      */
     public void colourLight(Light myLight, OUColour colour)
@@ -108,15 +110,14 @@ public class LevelCrossingController
     /**
      *  Qbii. Constructor for lights
      */
-
-
-
      public LevelCrossingController(Light lightOne, Light lightTwo, Light lightThree)
      {
+         //variables for lights from method args
          this.topLeft = lightOne;
          this.topRight = lightTwo;
          this.bottom = lightThree;
 
+         //sets light positions
          setPositions();
 
          State = 0;
@@ -130,50 +131,55 @@ public class LevelCrossingController
 
      /**
      * Qci
+      * If trainComing is true, then the State is incremented or decremented to operate the level crossing lights
+      * as required.
+      * If trainComing is false, State is set to 0 to turn all lights off.
+      * the break instruction allows for exiting the lopp to continue with any other instructions.
      */
 
     public void changeState()
     {
 
-        while (trainComing = true)
+        while (this.trainComing == true)
+        {
             if (this.State == 0)
             {
-                this.State = this.State +1;
+                this.State = 1;
                 break;
             }
 
             else if (this.State == 1)
             {
-                this.State = this.State +1;
+                this.State = 2;
                 break;
             }
 
             else if (this.State == 2)
             {
-                this.State = this.State +1;
+                this.State = 3;
                 break;
             }
 
             else
             {
-                this.State = this.State - 1;
+                this.State = 2;
                 break;
             }
-
-        while (trainComing = false)
+        }
+        while (this.trainComing == false)
         {
             this.State = 0;
+            break;
         }
-
 
     }
 
     /**
      * Q1cii
+     * Sets the colour of all lights dependant on state.
      */
     public void colourAllLights()
     {
-
         if (State == 0)
         {
             colourLight(bottom, OUColour.BLACK);
@@ -201,34 +207,39 @@ public class LevelCrossingController
             colourLight(topLeft, OUColour.BLACK);
             colourLight(topRight, OUColour.RED);
         }
-
     }
 
 
 
    /**
-   * Q1e
+   * Q1di
    */
    public static final int MIN_REPEATS = 4;
 
+    /**
+     * Q1e
+     * Automated level crossing controller utilising findNumRepeats
+     */
    public void doTrainApproaching()
     {
         System.out.println("Train approaching");
         setTrainComing(true);
-        delay(2000);
-        changeState();
-        delay(2000);
-        colourAllLights();
+        delay(700);
+        changeState(); //register trainComing = true
+        delay(700);
+        colourAllLights(); //set light colours appropriately
         System.out.println("Barrier Lowered");
-        int reps = findNumRepeats();
+        int reps = findNumRepeats(); //assign variable to findNumRepeats and increment through MIN_REPEATS to change
+                                     // states.
         for ( int i = 0; i < reps; i++)
         {
             changeState();
             colourAllLights();
-            delay(2000);
+            delay(700);
         }
-        delay(2000);
         setTrainComing(false);
+        changeState();
+        colourAllLights();
         System.out.println("Barrier raised");
     }
 }
