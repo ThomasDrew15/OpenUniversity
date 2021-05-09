@@ -104,7 +104,7 @@ public class Cyclist implements Comparable<Cyclist>
       double seconds = 0.0;
 
       minutes = time / 600;
-      seconds = time % 60;
+      seconds = (time % 600) / 10.0;
 
       return String.format("%s \t %d mins %.1f secs \t %s",
          name, minutes, seconds, raceCat);
