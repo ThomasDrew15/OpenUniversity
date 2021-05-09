@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ populateTestData()
-comment0.text=\n\ Stores\ and\ retrieves\ data\ about\ client\ names\ and\ interests.\n
+comment0.text=\n\ Adds\ a\ set\ of\ test\ data,\ assigns\ some\ values\ to\ the\ set,\ which\ then\ gets\ assigned\ with\ a\ key\ to\ the\ map.\n
 comment1.params=
 comment1.target=void\ printMap()
 comment1.text=\n\ Takes\ no\ arguments\ and\ iterates\ over\ all\ the\ map's\ keys\ to\ print\ out\ a\ meaningful\ textual\ representation\n\ of\ each\ key\ in\ the\ map\ and\ the\ associated\ value.\ Returns\ no\ value.\n
@@ -11,4 +11,10 @@ comment2.text=\n\ Takes\ a\ single\ argument.\ If\ the\ argument\ is\ a\ key\ in
 comment3.params=akey\ aValue
 comment3.target=void\ addMapEntry(java.lang.String,\ java.lang.String)
 comment3.text=\n\ \\\n\ Takes\ two\ arguments\ representing\ a\ key\ and\ a\ value.\ Adds\ the\ key\ and\ value\ to\ the\ map.\n\ If\ the\ key\ is\ already\ present\ the\ existing\ value\ is\ overwritten.\ Returns\ no\ value.\n\n\ @param\ aString\n\ @param\ aSet\n
-numComments=4
+comment4.params=keyToRemove
+comment4.target=boolean\ deleteEntry(java.lang.String)
+comment5.params=akey\ aValue
+comment5.target=void\ addToValueAtKey(java.lang.String,\ java.lang.String)
+comment6.params=akey\ aValue
+comment6.target=void\ deleteFromValueAtKey(java.lang.String,\ java.lang.String)
+numComments=7

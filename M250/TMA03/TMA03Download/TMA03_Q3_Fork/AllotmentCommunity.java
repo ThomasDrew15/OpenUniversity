@@ -2,9 +2,9 @@ import java.util.*;
 import ou.*;
 
 /**
- * A class which simulates a simple dating agency using a map.
+ * A class which simulates an allotment using a map.
  *
- * @author M250 Module Team
+ * @author Tom Drew
  * @version 1.0
  */
 
@@ -13,7 +13,7 @@ public class AllotmentCommunity {
     Set<String> growing = new HashSet<>();
 
     /**
-     * Stores and retrieves data about client names and interests.
+     * Adds a set of test data, assigns some values to the set, which then gets assigned with a key to the map.
      */
     public void populateTestData() {
         growing.add("Carrots");
@@ -60,6 +60,40 @@ public class AllotmentCommunity {
     public void addMapEntry(String akey, String aValue)
     {
         growing = new HashSet<>();
+        growing.add(aValue);
+        bed.put(akey, growing);
+    }
+
+
+    /**
+     * Takes a single argument representing a key in the map. If the key given as the argument exists,
+     * deletes the key-value pair from the map, and returns true, otherwise returns false.
+     * @param keyToRemove
+     * @return
+     */
+    public boolean deleteEntry(String keyToRemove)
+    {
+        bed.remove(keyToRemove);
+        if (bed.containsKey(keyToRemove))
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+    /**
+     * Adds a new element to the collection of elements for a particular key. You can assume that the key
+     * exists in the map. Returns no value.
+     * @param akey
+     * @param aValue
+     */
+    public void addToValueAtKey(String akey, String aValue)
+    {
+        //these are for testing
+        growing = new HashSet<>();
         //System.out.println(growing);
         //System.out.println(bed.get(akey));
         List<String> setList = new ArrayList<>(bed.get(akey));
@@ -73,8 +107,15 @@ public class AllotmentCommunity {
 
     }
 
-    public void removeMapEntry(String akey, String aValue)
+    /**
+     * Deletes an element from the collection of elements for a particular key. You can assume that the key
+     * exists in the map and the corresponding collection contains the specified element. Returns no value.
+     * @param akey
+     * @param aValue
+     */
+    public void deleteFromValueAtKey(String akey, String aValue)
     {
+        //these are for testing
         growing = new HashSet<>();
         //System.out.println(growing);
         //System.out.println(bed.get(akey));
@@ -88,9 +129,6 @@ public class AllotmentCommunity {
         printMapValue(akey);
 
     }
-
-
-
 }
 
 
