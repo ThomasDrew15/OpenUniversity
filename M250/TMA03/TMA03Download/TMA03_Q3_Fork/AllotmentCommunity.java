@@ -50,7 +50,6 @@ public class AllotmentCommunity {
     }
 
     /**
-     * \
      * Takes two arguments representing a key and a value. Adds the key and value to the map.
      * If the key is already present the existing value is overwritten. Returns no value.
      *
