@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/M250/Activities/Activities.iml" filepath="$PROJECT_DIR$/M250/Activities/Activities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M250/M250.iml" filepath="$PROJECT_DIR$/M250/M250.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OpenUniversity.iml" filepath="$PROJECT_DIR$/.idea/OpenUniversity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M250/TMA01Download/TMA01Download.iml" filepath="$PROJECT_DIR$/M250/TMA01Download/TMA01Download.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M250/TMA_01/TMA01Download/TMA01Download1.iml" filepath="$PROJECT_DIR$/M250/TMA_01/TMA01Download/TMA01Download1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M250/TMA03/TMA03.iml" filepath="$PROJECT_DIR$/M250/TMA03/TMA03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M250/TMA_01/TMA_01.iml" filepath="$PROJECT_DIR$/M250/TMA_01/TMA_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M250/TMA_02/TMA_02.iml" filepath="$PROJECT_DIR$/M250/TMA_02/TMA_02.iml" />
+    </modules>
+  </component>
+</project>
